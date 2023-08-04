@@ -1,0 +1,4 @@
+﻿event EditTileMap {
+  TileType TileType;
+  FPVector3 Position;
+}

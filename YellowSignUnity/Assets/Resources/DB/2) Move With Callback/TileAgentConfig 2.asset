@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98fc6f08efc9de641bc332ffa175b906, type: 3}
+  m_Name: TileAgentConfig 2
+  m_EditorClassIdentifier: 
+  Settings:
+    Identifier:
+      Path: Resources/DB/2) Move With Callback/TileAgentConfig 2
+      Guid:
+        Value: 4238688444657720233
+    MovementType: 2
+    Velocity:
+      RawValue: 327680
+    DistanceToReach:
+      RawValue: 6553
+    MaxNumberOfWaypoints: 10
+    MaxCostOfSearch: 300
+    DrawGizmos: 1

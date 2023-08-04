@@ -1,0 +1,17 @@
+﻿global {
+	dictionary<int, ItemsInTile> TileMapItems;
+}
+
+component ItemsInTile{
+	list<EntityRef> Items;
+}
+
+component ItemTile{
+	FPVector3 LastPosition;
+	bool Block;
+}
+
+component SearchData{
+	entity_ref Entity;
+    int Cost;
+}

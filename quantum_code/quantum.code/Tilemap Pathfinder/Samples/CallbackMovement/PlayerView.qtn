@@ -1,0 +1,7 @@
+﻿event ChangePlayerState{
+    PlayerStates State;
+}
+
+enum PlayerStates{
+    Moving, Reach, Fail
+}

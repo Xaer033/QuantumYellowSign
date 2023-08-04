@@ -1,0 +1,24 @@
+﻿
+asset TileAgentConfig;
+
+component TilePathfinder{
+	asset_ref<TileAgentConfig> Agent;
+	list<int> Waypoints;
+	int TargetPosition;
+	int CurrentWaypoint;
+}
+
+signal OnTileMapSearchFailed(entity_ref entity);
+signal OnTileMapWaypointReached(entity_ref entity, FPVector3 waypoint, WaypointStatus status);
+signal OnTileMapMoveAgent(entity_ref entity, FPVector3 desiredDirection);
+
+enum TileType{
+	None = 0,
+	Wall = 1
+}
+
+enum WaypointStatus{
+	Next,
+	Final
+}
+

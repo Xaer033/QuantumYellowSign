@@ -1,0 +1,5 @@
+﻿
+singleton component RuntimeTileMap{
+	asset_ref<TileMapData> MapAsset;
+	list<byte> Tiles;
+} 

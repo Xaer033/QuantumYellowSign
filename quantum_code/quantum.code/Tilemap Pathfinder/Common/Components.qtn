@@ -1,0 +1,8 @@
+﻿input{
+	short position;
+	button click;
+}
+
+component PlayerLink{
+	player_ref Player;
+}

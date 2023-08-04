@@ -1,0 +1,93 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6dd8e95ae0daaec4496511105240e8a3, type: 3}
+  m_Name: AssetResources
+  m_EditorClassIdentifier: 
+  AssetBundlesGroup:
+    _resources: []
+  ResourcesGroup:
+    _resources:
+    - Path: Resources/DB/Configs/DefaultPhysicsMaterial
+      AssetRef:
+        Id:
+          Value: 1
+      ResourcePath: DB/Configs/DefaultPhysicsMaterial
+    - Path: Resources/DB/Configs/DefaultNavMeshAgentConfig
+      AssetRef:
+        Id:
+          Value: 2
+      ResourcePath: DB/Configs/DefaultNavMeshAgentConfig
+    - Path: Resources/DB/Configs/DefaultCharacterController2D
+      AssetRef:
+        Id:
+          Value: 3
+      ResourcePath: DB/Configs/DefaultCharacterController2D
+    - Path: Resources/DB/Configs/DefaultCharacterController3D
+      AssetRef:
+        Id:
+          Value: 4
+      ResourcePath: DB/Configs/DefaultCharacterController3D
+    - Path: Resources/DB/Configs/SimulationConfig
+      AssetRef:
+        Id:
+          Value: 5
+      ResourcePath: DB/Configs/SimulationConfig
+    - Path: Resources/DB/3) Edit Tile Map/TileAgentConfig 3
+      AssetRef:
+        Id:
+          Value: 36545469664743747
+      ResourcePath: DB/3) Edit Tile Map/TileAgentConfig 3
+    - Path: Resources/DB/2) Move With Callback/TileMap2 - 8 directions
+      AssetRef:
+        Id:
+          Value: 361091146093699901
+      ResourcePath: DB/2) Move With Callback/TileMap2 - 8 directions
+    - Path: Resources/DB/1) Simple Click Movement/TileAgentConfig 1
+      AssetRef:
+        Id:
+          Value: 1429642159575245046
+      ResourcePath: DB/1) Simple Click Movement/TileAgentConfig 1
+    - Path: Resources/DB/3) Edit Tile Map/HexagonalMap
+      AssetRef:
+        Id:
+          Value: 1618381908283743571
+      ResourcePath: DB/3) Edit Tile Map/HexagonalMap
+    - Path: Resources/DB/Map1
+      AssetRef:
+        Id:
+          Value: 1710471675203725834
+      ResourcePath: DB/Map1
+    - Path: Resources/DB/4) Decide the best target/TileAgentConfig 4
+      AssetRef:
+        Id:
+          Value: 3356055576977107508
+      ResourcePath: DB/4) Decide the best target/TileAgentConfig 4
+    - Path: Resources/DB/1) Simple Click Movement/TileMap1
+      AssetRef:
+        Id:
+          Value: 3422010691266738452
+      ResourcePath: DB/1) Simple Click Movement/TileMap1
+    - Path: Resources/DB/4) Decide the best target/TileMap 4
+      AssetRef:
+        Id:
+          Value: 3796966886337513946
+      ResourcePath: DB/4) Decide the best target/TileMap 4
+    - Path: Resources/DB/Map1_mesh
+      AssetRef:
+        Id:
+          Value: 4004016635422020486
+      ResourcePath: DB/Map1_mesh
+    - Path: Resources/DB/2) Move With Callback/TileAgentConfig 2
+      AssetRef:
+        Id:
+          Value: 4238688444657720233
+      ResourcePath: DB/2) Move With Callback/TileAgentConfig 2

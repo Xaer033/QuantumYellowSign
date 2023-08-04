@@ -1,0 +1,4 @@
+﻿component AIDecision{
+	entity_ref CurrentTarget;
+	dictionary<entity_ref, int> Targets;
+}
