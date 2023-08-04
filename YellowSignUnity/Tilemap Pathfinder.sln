@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonQuantum", "PhotonQuantum.csproj", "{3d7d92e8-341a-535e-32db-2eafadd6f84a}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{5e233974-51bd-7fca-f264-3f3cd6e67a7d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonRealtime", "PhotonRealtime.csproj", "{311dd0ed-20b1-8ac3-4bd3-90030648787d}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonQuantumEditor", "PhotonQuantumEditor.csproj", "{65893d05-1fac-3cca-9bab-f097fd033d68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{b505cb64-4d1b-1c5a-095a-912bd9666d78}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3d7d92e8-341a-535e-32db-2eafadd6f84a}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3d7d92e8-341a-535e-32db-2eafadd6f84a}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5e233974-51bd-7fca-f264-3f3cd6e67a7d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5e233974-51bd-7fca-f264-3f3cd6e67a7d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{311dd0ed-20b1-8ac3-4bd3-90030648787d}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{311dd0ed-20b1-8ac3-4bd3-90030648787d}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65893d05-1fac-3cca-9bab-f097fd033d68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65893d05-1fac-3cca-9bab-f097fd033d68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{b505cb64-4d1b-1c5a-095a-912bd9666d78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{b505cb64-4d1b-1c5a-095a-912bd9666d78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -20,9 +20,9 @@ MonoBehaviour:
     UserAsset:
       Id:
         Value: 0
-    Scene: 1) Simple Click Movement
-    ScenePath: Assets/Script/1) Simple Click Movement/1) Simple Click Movement.unity
-    SceneGuid: e0e9cb9e09cd6834288f8aeb82486163
+    Scene: 3) Edit Tile Map
+    ScenePath: Assets/Script/3) Edit Tile Map/3) Edit Tile Map.unity
+    SceneGuid: 17948933cd7c3cc48aac9a0b3800da5d
     WorldSize: 256
     BucketsCount: 16
     BucketsSubdivisions: 8
@@ -55,7 +55,7 @@ MonoBehaviour:
     TilePathfinder:
     - Agent:
         Id:
-          Value: 1429642159575245046
+          Value: 36545469664743747
       Waypoints: 
       TargetPosition: 0
       CurrentWaypoint: 0
@@ -101,8 +101,8 @@ MonoBehaviour:
     RuntimeTileMap:
     - MapAsset:
         Id:
-          Value: 3422010691266738452
-      Tiles: 00
+          Value: 1618381908283743571
+      Tiles: 
     SearchData: []
     TilePathfinder: []
     CharacterController2D: []
