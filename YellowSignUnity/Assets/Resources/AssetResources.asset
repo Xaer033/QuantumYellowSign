@@ -51,6 +51,11 @@ MonoBehaviour:
         Id:
           Value: 361091146093699901
       ResourcePath: DB/2) Move With Callback/TileMap2 - 8 directions
+    - Path: Resources/DB/TestMap/TestMap
+      AssetRef:
+        Id:
+          Value: 708601147969587546
+      ResourcePath: DB/TestMap/TestMap
     - Path: Resources/DB/1) Simple Click Movement/TileAgentConfig 1
       AssetRef:
         Id:
@@ -66,6 +71,11 @@ MonoBehaviour:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/TestMap/TestTileMapAsset
+      AssetRef:
+        Id:
+          Value: 2047663679722660033
+      ResourcePath: DB/TestMap/TestTileMapAsset
     - Path: Resources/DB/4) Decide the best target/TileAgentConfig 4
       AssetRef:
         Id:
@@ -76,6 +86,11 @@ MonoBehaviour:
         Id:
           Value: 3422010691266738452
       ResourcePath: DB/1) Simple Click Movement/TileMap1
+    - Path: Resources/DB/TestMap/TestMap_mesh
+      AssetRef:
+        Id:
+          Value: 3574747537837414300
+      ResourcePath: DB/TestMap/TestMap_mesh
     - Path: Resources/DB/4) Decide the best target/TileMap 4
       AssetRef:
         Id:

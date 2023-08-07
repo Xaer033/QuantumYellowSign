@@ -1,0 +1,7 @@
+D:\GameDev\Projects\QuantumYellowSign\Tilemap Pathfinder\Assets\Photon\Quantum\Assemblies\quantum.code.dll
+D:\GameDev\Projects\QuantumYellowSign\Tilemap Pathfinder\Assets\Photon\Quantum\Assemblies\quantum.code.pdb
+D:\GameDev\Projects\QuantumYellowSign\quantum_code\quantum.code\obj\Release\quantum.code.csproj.AssemblyReference.cache
+D:\GameDev\Projects\QuantumYellowSign\quantum_code\quantum.code\obj\Release\quantum.code.csproj.CoreCompileInputs.cache
+D:\GameDev\Projects\QuantumYellowSign\quantum_code\quantum.code\obj\Release\quantum.code.csproj.CopyComplete
+D:\GameDev\Projects\QuantumYellowSign\quantum_code\quantum.code\obj\Release\quantum.code.dll
+D:\GameDev\Projects\QuantumYellowSign\quantum_code\quantum.code\obj\Release\quantum.code.pdb

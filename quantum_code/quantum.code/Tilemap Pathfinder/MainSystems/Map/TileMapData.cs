@@ -66,16 +66,14 @@ namespace Quantum
 
         public virtual FPVector3 IndexToPositionRaw(int index) {
             int x = index % WIDTH;
-            int y = index / HEIGHT;
+            int y = index / WIDTH;
             return new FPVector3(x, 0, y);
-
         }
 
         public virtual FPVector3 IndexToPosition(int index) {
             int x = index % WIDTH;
-            int y = index / HEIGHT;
+            int y = index / WIDTH;
             return new FPVector3(x * TileWidth, 0, y * TileHeight) + Offset;
-
         }
 
         public virtual int PositionToIndex(FPVector3 position) {

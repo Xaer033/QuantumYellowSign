@@ -20,9 +20,9 @@ MonoBehaviour:
     UserAsset:
       Id:
         Value: 0
-    Scene: 3) Edit Tile Map
-    ScenePath: Assets/Script/3) Edit Tile Map/3) Edit Tile Map.unity
-    SceneGuid: 17948933cd7c3cc48aac9a0b3800da5d
+    Scene: TestMap
+    ScenePath: Assets/Scenes/TestMap.unity
+    SceneGuid: f16010be1ac48e0419f79a00779362fc
     WorldSize: 256
     BucketsCount: 16
     BucketsSubdivisions: 8
@@ -81,7 +81,7 @@ MonoBehaviour:
         X:
           RawValue: 32768
         Y:
-          RawValue: 32768
+          RawValue: 65536
         Z:
           RawValue: 32768
       Rotation:
@@ -101,7 +101,7 @@ MonoBehaviour:
     RuntimeTileMap:
     - MapAsset:
         Id:
-          Value: 1618381908283743571
+          Value: 2047663679722660033
       Tiles: 
     SearchData: []
     TilePathfinder: []

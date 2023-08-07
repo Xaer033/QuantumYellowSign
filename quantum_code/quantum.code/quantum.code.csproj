@@ -45,7 +45,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>portable</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\quantum_unity\Assets\Photon\Quantum\Assemblies\</OutputPath>
+    <OutputPath>..\..\YellowSignUnity\Assets\ThirdParty\Photon\Quantum\Assemblies\</OutputPath>
     <DefineConstants>QUANTUM_PROFILER_ENABLED</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>

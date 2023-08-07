@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Script/1) Simple Click Movement/1) Simple Click Movement.unity
+    path: Assets/Samples/1) Simple Click Movement/1) Simple Click Movement.unity
     guid: e0e9cb9e09cd6834288f8aeb82486163
   - enabled: 1
-    path: Assets/Script/2) Move With Callback/2) Move With Callback.unity
+    path: Assets/Samples/2) Move With Callback/2) Move With Callback.unity
     guid: cc58064e1a26ca847ab2700db56fee06
   - enabled: 1
-    path: Assets/Script/3) Edit Tile Map/3) Edit Tile Map.unity
+    path: Assets/Samples/3) Edit Tile Map/3) Edit Tile Map.unity
     guid: 17948933cd7c3cc48aac9a0b3800da5d
   - enabled: 1
-    path: Assets/Script/4) Decide the best target/4) Decide the best target.unity
+    path: Assets/Samples/4) Decide the best target/4) Decide the best target.unity
     guid: ea67d88f473a9f141bdca8c1a2c49920
+  - enabled: 1
+    path: Assets/Scenes/TestMap.unity
+    guid: f16010be1ac48e0419f79a00779362fc
   m_configObjects:
     com.unity.addressableassets: {fileID: 11400000, guid: 8012c229df5d8f84683449de40029a6b,
       type: 2}
