@@ -55,10 +55,11 @@ MonoBehaviour:
     TilePathfinder:
     - Agent:
         Id:
-          Value: 36545469664743747
+          Value: 1386150637026422715
       Waypoints: 
       TargetPosition: 0
       CurrentWaypoint: 0
+    Tower: []
     CharacterController2D: []
     CharacterController3D:
     - Config:
@@ -71,9 +72,126 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D: []
+    PhysicsCollider3D:
+    - ShapeConfig:
+        ShapeType: 2
+        SphereRadius:
+          RawValue: 0
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 32768
+          Y:
+            RawValue: 32768
+          Z:
+            RawValue: 32768
+        RotationOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 1
+      Layer: 7
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D: []
+    PhysicsCallbacks3D:
+    - CallbackFlags:
+        Value: 0
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 341442
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 32768
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    ItemTile: []
+    ItemsInTile: []
+    PlayerLink:
+    - Player:
+        _index: 0
+    RuntimeTileMap: []
+    SearchData: []
+    TilePathfinder: []
+    Tower:
+    - Config:
+        Id:
+          Value: 1086777800636263449
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D:
+    - ShapeConfig:
+        ShapeType: 2
+        SphereRadius:
+          RawValue: 0
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 32768
+          Y:
+            RawValue: 32768
+          Z:
+            RawValue: 32768
+        RotationOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 1
+      Layer: 0
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D:
+    - CallbackFlags:
+        Value: 0
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
@@ -81,7 +199,94 @@ MonoBehaviour:
         X:
           RawValue: 32768
         Y:
-          RawValue: 65536
+          RawValue: 0
+        Z:
+          RawValue: 98304
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    ItemTile: []
+    ItemsInTile: []
+    PlayerLink:
+    - Player:
+        _index: 1
+    RuntimeTileMap: []
+    SearchData: []
+    TilePathfinder:
+    - Agent:
+        Id:
+          Value: 1386150637026422715
+      Waypoints: 
+      TargetPosition: 0
+      CurrentWaypoint: 0
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D:
+    - Config:
+        Id:
+          Value: 4
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D:
+    - ShapeConfig:
+        ShapeType: 2
+        SphereRadius:
+          RawValue: 0
+        PositionOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        BoxExtents:
+          X:
+            RawValue: 32768
+          Y:
+            RawValue: 32768
+          Z:
+            RawValue: 32768
+        RotationOffset:
+          X:
+            RawValue: 0
+          Y:
+            RawValue: 0
+          Z:
+            RawValue: 0
+        UserTag: 0
+        IsPersistent: 1
+        CompoundShapes: []
+        IsSetFromSourceCollider: 1
+      Layer: 7
+      IsTrigger: 0
+      PhysicsMaterial:
+        Id:
+          Value: 0
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D:
+    - CallbackFlags:
+        Value: 0
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -395837
+        Y:
+          RawValue: 0
         Z:
           RawValue: 32768
       Rotation:
@@ -105,6 +310,7 @@ MonoBehaviour:
       Tiles: 
     SearchData: []
     TilePathfinder: []
+    Tower: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []

@@ -21,7 +21,7 @@ MonoBehaviour:
       X:
         RawValue: 0
       Y:
-        RawValue: 32768
+        RawValue: 0
       Z:
         RawValue: 0
     Radius:
@@ -40,16 +40,16 @@ MonoBehaviour:
     Acceleration:
       RawValue: 1638400
     Braking:
-      RawValue: 655360
+      RawValue: 4587520
     BaseJumpImpulse:
       RawValue: 393216
     MaxSpeed:
-      RawValue: 196608
+      RawValue: 131072
     Gravity:
       X:
         RawValue: 0
       Y:
-        RawValue: -655360
+        RawValue: 0
       Z:
         RawValue: 0
     MaxSlope:

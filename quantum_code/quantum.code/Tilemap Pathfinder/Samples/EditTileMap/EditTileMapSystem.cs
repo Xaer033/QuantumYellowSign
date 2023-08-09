@@ -14,8 +14,8 @@ namespace Quantum.Sample
 
         public override void Update(Frame f, ref EditTileMapFilter filter) {
 
-            var map = f.GetSingleton<RuntimeTileMap>();
-
+            var map     = f.GetSingleton<RuntimeTileMap>();
+            
             // If the player click into the map to carve, it will edit the bitset in tuntimemap
             // and will send a event telling witch tile was changed
 
@@ -23,8 +23,23 @@ namespace Quantum.Sample
                 if (f.GetPlayerCommand(i) is CommandEditTile command) {
 
                     int index = asset.PositionToIndex(command.Position);
+
+                    bool isWall            = map.IsWall(f, index);
+                    bool commandTypeIsWall = command.TileType == (int)TileType.Wall;
+                    
+                    if (isWall == commandTypeIsWall)
+                        continue;
+                        
                     map.SetTile(f, index, (TileType)command.TileType);
-                    f.Events.EditTileMap((TileType)command.TileType, asset.IndexToPosition(index));
+                    
+                    FPVector3 position = asset.IndexToPosition(index);
+                    
+                    var entityPrototype = f.FindAsset<EntityPrototype>("Resources/DB/Towers/SimpleTower/SimpleTower|EntityPrototype");
+                    var towerInstance = f.Create(entityPrototype);
+                    f.Unsafe.TryGetPointer<Transform3D>(towerInstance, out var towerTransform);
+                    towerTransform->Position = position;
+                    
+                    f.Events.EditTileMap((TileType)command.TileType, position);
                 }
             }
         }

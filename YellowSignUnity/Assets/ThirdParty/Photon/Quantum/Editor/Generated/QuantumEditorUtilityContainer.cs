@@ -29,6 +29,7 @@ namespace Quantum.Editor {
     [System.Serializable]
     public partial class KnownObjectsContainer : QuantumEditorUtility.SerializableObjectsContainerBase {
       public Quantum.TileAgentConfig[] TileAgentConfig = {};
+      public Quantum.TowerConfig[] TowerConfig = {};
       public Quantum.SimulationConfig[] SimulationConfig = {};
       public Quantum.HexagonalMap[] HexagonalMap = {};
       public Quantum.TileMap8[] TileMap8 = {};

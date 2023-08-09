@@ -66,6 +66,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientPlayer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumTaskRunnerJobs.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\INestedAssetHost.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTower.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\DebugMesh.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCollider2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInputRecorderStarter.cs" />
@@ -214,6 +215,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset_Addressable.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\ComponentPrototypeRefWrapper.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TowerConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs\DeterministicSessionConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsBody3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCollider3D.cs" />

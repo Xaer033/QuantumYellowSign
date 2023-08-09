@@ -59,7 +59,9 @@ namespace Quantum
         public virtual ushort Heuristic(int from, int to) {
             FPVector3 a = IndexToPositionRaw(from);
             FPVector3 b = IndexToPositionRaw(to);
-            return (ushort)(FPMath.Abs(a.X - b.X) + FPMath.Abs(a.Z - b.Z));
+            // return (ushort)(FPMath.Abs(a.X - b.X) + FPMath.Abs(a.Z - b.Z));
+            
+            return (ushort)(FPVector3.Distance(a, b));
         }
 
         // Below is the conversion algorithms of basic grid to index position

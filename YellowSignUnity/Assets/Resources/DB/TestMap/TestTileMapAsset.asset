@@ -105,7 +105,7 @@ MonoBehaviour:
     - Index: 42
       TileType: 0
     - Index: 43
-      TileType: 0
+      TileType: 1
     - Index: 44
       TileType: 0
     - Index: 45

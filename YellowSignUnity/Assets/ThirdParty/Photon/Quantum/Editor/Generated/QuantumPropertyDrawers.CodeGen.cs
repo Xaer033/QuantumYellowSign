@@ -43,6 +43,13 @@ namespace Quantum.Editor {
     }
   }
 
+  [CustomPropertyDrawer(typeof(AssetRefTowerConfig))]
+  public class AssetRefTowerConfigPropertyDrawer : PropertyDrawer {
+    public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
+      AssetRefDrawer.DrawAssetRefSelector(position, property, label, typeof(TowerConfigAsset));
+    }
+  }
+
   [CustomPropertyDrawer(typeof(Quantum.Prototypes.PlayerStates_Prototype))]
   [CustomPropertyDrawer(typeof(Quantum.Prototypes.TileType_Prototype))]
   [CustomPropertyDrawer(typeof(Quantum.Prototypes.WaypointStatus_Prototype))]

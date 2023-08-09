@@ -1,0 +1,25 @@
+
+asset TowerConfig;
+
+
+component Tower 
+{
+	asset_ref<TowerConfig> Config;
+	
+	[ExcludeFromPrototype]
+	entity_ref TargetEntityRef;
+	[ExcludeFromPrototype]
+	byte AiState;
+	[ExcludeFromPrototype]
+	FPQuaternion BarrelRotation;
+	[ExcludeFromPrototype]
+	FP Range;
+	[ExcludeFromPrototype]
+	FP Damage;
+	[ExcludeFromPrototype]
+	FP Health;
+	[ExcludeFromPrototype]
+	FP ReloadTime;
+	[ExcludeFromPrototype]
+	FP ThinkTickTimer;
+}

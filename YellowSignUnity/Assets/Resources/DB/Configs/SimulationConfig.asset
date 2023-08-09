@@ -141,7 +141,7 @@ MonoBehaviour:
     HeapPageShift: 15
     HeapPageCount: 256
     HeapExtraCount: 0
-    ThreadCount: 2
+    ThreadCount: 4
     ChecksumSnapshotHistoryLengthSeconds:
       RawValue: 196608
     ChecksumErrorDumpOptions: 0

@@ -30,10 +30,11 @@ namespace Quantum.Sample
             f.Events.ChangePlayerState(PlayerStates.Moving);
             var agent = f.FindAsset<TileAgentConfig>(f.Get<TilePathfinder>(entity).Agent.Id);
 
+            f.Unsafe.TryGetPointer<PlayerLink>(entity, out var playerLink);
+ 
             if (f.Unsafe.TryGetPointer<Transform3D>(entity, out var transform3D)) {
                 transform3D->Position += desiredDirection.Normalized * f.DeltaTime * agent.Velocity;
             }
-
         }
 
         public void OnTileMapWaypointReached(Frame f, EntityRef entity, FPVector3 waypoint, WaypointStatus status) {

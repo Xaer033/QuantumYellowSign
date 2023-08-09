@@ -12,7 +12,7 @@ public class WallsPool : MonoBehaviour
     [SerializeField] public GameObject WallsHexagon;
 
     void Start() {
-        QuantumEvent.Subscribe(listener: this, handler: (EventEditTileMap e) => UpdateTiles(e));
+        // QuantumEvent.Subscribe(listener: this, handler: (EventEditTileMap e) => UpdateTiles(e));
     }
 
     void UpdateTiles(EventEditTileMap e)

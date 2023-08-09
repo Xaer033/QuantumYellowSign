@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 98fc6f08efc9de641bc332ffa175b906, type: 3}
-  m_Name: TileAgentConfig 3
+  m_Name: BasicCreepConfig
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/3) Edit Tile Map/TileAgentConfig 3
+      Path: Resources/DB/Creeps/BasicCreep/BasicCreepConfig
       Guid:
-        Value: 36545469664743747
+        Value: 1386150637026422715
     MovementType: 2
     Velocity:
       RawValue: 196608

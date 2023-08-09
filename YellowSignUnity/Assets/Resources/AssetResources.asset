@@ -56,6 +56,16 @@ MonoBehaviour:
         Id:
           Value: 708601147969587546
       ResourcePath: DB/TestMap/TestMap
+    - Path: Resources/DB/Towers/SimpleTower/SimpleTowerConfig
+      AssetRef:
+        Id:
+          Value: 1086777800636263449
+      ResourcePath: DB/Towers/SimpleTower/SimpleTowerConfig
+    - Path: Resources/DB/Creeps/BasicCreep/BasicCreepConfig
+      AssetRef:
+        Id:
+          Value: 1386150637026422715
+      ResourcePath: DB/Creeps/BasicCreep/BasicCreepConfig
     - Path: Resources/DB/1) Simple Click Movement/TileAgentConfig 1
       AssetRef:
         Id:
@@ -66,16 +76,31 @@ MonoBehaviour:
         Id:
           Value: 1618381908283743571
       ResourcePath: DB/3) Edit Tile Map/HexagonalMap
+    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 1691852922248909936
+      ResourcePath: DB/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/Map1
       AssetRef:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
+    - Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 2027169356565845022
+      ResourcePath: DB/Creeps/BasicCreep/BasicCreep
     - Path: Resources/DB/TestMap/TestTileMapAsset
       AssetRef:
         Id:
           Value: 2047663679722660033
       ResourcePath: DB/TestMap/TestTileMapAsset
+    - Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityView
+      AssetRef:
+        Id:
+          Value: 2341898971168645702
+      ResourcePath: DB/Creeps/BasicCreep/BasicCreep
     - Path: Resources/DB/4) Decide the best target/TileAgentConfig 4
       AssetRef:
         Id:
@@ -91,6 +116,11 @@ MonoBehaviour:
         Id:
           Value: 3574747537837414300
       ResourcePath: DB/TestMap/TestMap_mesh
+    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityView
+      AssetRef:
+        Id:
+          Value: 3613963025335521952
+      ResourcePath: DB/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/4) Decide the best target/TileMap 4
       AssetRef:
         Id:
