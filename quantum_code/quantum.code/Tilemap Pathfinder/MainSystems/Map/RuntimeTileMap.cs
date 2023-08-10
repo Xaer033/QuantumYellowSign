@@ -34,7 +34,7 @@
             var list = f.ResolveList(Tiles);
             var offset = index / 8;
 
-            if (index < 0 || offset > list.Count) 
+            if (index < 0 || offset >= list.Count) 
                 return false;
 
             return (list[offset] & (byte)(1 << index % 8)) > 0;

@@ -26,7 +26,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\PhotonQuantum\</OutputPath>
-    <DefineConstants>UNITY_2021_3_11;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;QUANTUM_2_0_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_11;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;QUANTUM_2_0_OR_NEWER;UNITY_POST_PROCESSING_STACK_V2;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169,0649</NoWarn>
@@ -44,77 +44,41 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\UnityResourceLoader.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\UnityDB.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumJsonSerializer.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentBase.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileMapDataAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\ReflectionUtils.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_Resources.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumRunner.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumRunnerLocalDebug.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileAgentConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapData.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumEditorSettings.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\JsonReplaySerializer.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\GizmoUtils.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\HexagonalMapAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumUnityMemoryLayoutVerifierPlatform.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Network\QuantumLoadBalancingClient.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\SimulationConfigAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\InspectorButtonAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentNavMeshAvoidanceObstacle.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_FrameDiffer.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Network\PhotonServerSettings.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientPlayer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumTaskRunnerJobs.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\INestedAssetHost.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTower.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\DebugMesh.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCollider2D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInputRecorderStarter.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumUnityNativeImplementation.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityPrototypeAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\NavMeshAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_StartRecording.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshDebugDrawer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_MapLoading.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\TerrainColliderData.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\PolygonColliderAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset_Resource.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\DebugDraw.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshDefinition.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticPolygonCollider2D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentSearchData.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsJoints3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCollider2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\BinaryDataAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_DebugDraw.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\MultiTypeReferenceAttribute.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumMapLoader.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\SerializedObjectExtensions.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumEvent.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshBaker.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsJoints2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\LocalReferenceAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentView.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\FPMathUtils.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumStallWatcher.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\QuantumAOT.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeUtils.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumProfilingClient.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshRegion.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticBoxCollider3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticEdgeCollider2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticColliderSettings.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumRunnerLocalSavegame.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumSimpleReplaySaver.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\PhysicsMaterialAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentNavMeshAvoidanceAgent.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_DebugDraw.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\CharacterController3DConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_UnityCallbacks.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsBody2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumUnityJsonSerializer.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2DVertical.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs\SimulationConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumMemoryStats.cs" />
@@ -123,113 +87,172 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\UtilsAttributes.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityPrototypeBakedAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsJoints3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCallbacks3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileMapAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityViewBindBehaviour.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityViewBakedAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshUnity.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapDataBaker.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_Addressables.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\IQuantumPrefabNestedAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_FrameDiffer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityView.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticTerrainCollider3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentItemsInTile.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceInfo.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticMeshCollider3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentRuntimeTileMap.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumFrameDiffer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCallbacks2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCallbacks2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumStats.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_LocalInput.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileMap8Asset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\EnumFlagsAttribue.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientRunner.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\NavMeshAgentConfigAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallback.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumUnityStaticDispatcherAdapter.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentNavMeshPathfinder.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform2DVertical.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeRefWrapper.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentAIDecision.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceInfoGroup.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\QuantumInspectorAttribute.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\NestedAssetBase.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs\SimulationConfigAssetHelper.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\BsonReplaySerializer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentNavMeshPathfinder.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInstantReplay.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\GameObjectUtils.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsBody2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\ComponentPrototypeRefWrapper.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCollider3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_StartRecording.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumHeapStats.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\UnityAssetLoading.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentBase.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileMapDataAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumRunner.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumRunnerLocalDebug.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileAgentConfigAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumEditorSettings.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\JsonReplaySerializer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\GizmoUtils.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\SimulationConfigAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\InspectorButtonAttribute.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_FrameDiffer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Network\PhotonServerSettings.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientPlayer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTower.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInputRecorderStarter.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumUnityNativeImplementation.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityPrototypeAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_StartRecording.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshDebugDrawer.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset_Resource.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentSearchData.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCollider2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumMapLoader.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\SerializedObjectExtensions.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsJoints2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\FPMathUtils.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumStallWatcher.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeUtils.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumProfilingClient.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshRegion.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticBoxCollider3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticEdgeCollider2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumSimpleReplaySaver.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\PhysicsMaterialAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2DVertical.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCallbacks3D.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityViewBindBehaviour.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityViewBakedAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMeshUnity.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\IQuantumPrefabNestedAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentAdapterBase.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumCallbacks.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityViewAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\QuantumPropertyAttributeProxyAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\RectExtensions.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\IQuantumUnityDispatcher.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentItemsInTile.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceInfo.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\CharacterController2DConfigAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticMeshCollider3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticBoxCollider2D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentRuntimeTileMap.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\FloatMinMax.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCallbacks3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumFrameDifferGUI.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumFrameDiffer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticSphereCollider3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentNavMeshAgent.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCallbacks2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapDataBakerCallbackAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_InitLayers.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCallbacks2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\ProgressBar.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumStats.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_LegacyQuantumCallback.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_LocalInput.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TileMap8Asset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\UnityFileLoader.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsJoints2D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\EnumFlagsAttribue.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientRunner.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototype.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientPlayerView.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\NavMeshAgentConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\NewtonsoftHelper.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPlayerLink.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapDataBakerCallback.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_UnityCallbacks.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallback.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeConverter.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\TerrainColliderAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticCircleCollider2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\IQuantumEditorGUI.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\IQuantumPrefabBakedAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityViewUpdater.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInstantReplayDemo.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumUnityStaticDispatcherAdapter.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentNavMeshPathfinder.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\MapAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentCharacterController2D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform2DVertical.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\EditorDefines.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeRefWrapper.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentAIDecision.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceInfoGroup.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset_AssetBundle.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameGizmos.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsBody3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\QuantumInspectorAttribute.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\NestedAssetBase.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumRunnerLocalReplay.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentItemTile.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs\SimulationConfigAssetHelper.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\IPrototypeAdapter.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\BsonReplaySerializer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetBase.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentNavMeshPathfinder.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\UnityPrototypeAdapters.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumInstantReplay.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\GameObjectUtils.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapNavMesh.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsBody2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\PrototypeAdapter.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentCharacterController3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumInput.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset_Addressable.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\QuantumPrefabAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\ComponentPrototypeRefWrapper.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\TowerConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs\DeterministicSessionConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsBody3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsCollider3D.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_StartRecording.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumHeapStats.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentNavMeshSteeringAgent.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_AssetBundle.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\IQuantumPrefabNestedAssetHost.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumNetworkCommunicator.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\UnityAssetLoading.cs" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Native" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Assemblies" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Network" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Resources" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Generated" />
      <None Include="Assets\ThirdParty\Photon\Quantum\PhotonQuantum.asmdef" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Resources\LUT" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking" />
      <None Include="Assets\ThirdParty\Photon\Quantum\Generated\GENERATED_CODE.txt" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Resources\DEV" />
      <None Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\GENERATED_CODE.txt" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Resources\DEV\Mesh" />
      <None Include="Assets\ThirdParty\Photon\Quantum\Resources\DEV\DebugDraw.shader" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Configs" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient" />
+     <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -503,14 +526,29 @@
      <Reference Include="Photon3Unity3D">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Unsafe">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Mdb">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
+     </Reference>
      <Reference Include="quantum.code">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\Quantum\Assemblies\quantum.code.dll</HintPath>
      </Reference>
      <Reference Include="quantum.core">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\Quantum\Assemblies\quantum.core.dll</HintPath>
      </Reference>
+     <Reference Include="Unity.Burst.Cecil.Pdb">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
+     </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+     </Reference>
+     <Reference Include="Unity.Burst.Cecil.Rocks">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>

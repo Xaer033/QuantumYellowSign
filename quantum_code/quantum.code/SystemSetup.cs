@@ -1,8 +1,4 @@
-﻿using Photon.Deterministic;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using Quantum.YellowSign;
 
 namespace Quantum {
   public static class SystemSetup {

@@ -97,6 +97,8 @@
     <Compile Include="SimulationConfig.User.cs" />
     <Compile Include="SystemSetup.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="YellowSign\Commands\CommandSpawnTower.cs" />
+    <Compile Include="YellowSign\Systems\TowerSpawnerSystem.cs" />
     <Compile Include="YellowSign\Systems\TowerSystem.cs" />
     <Compile Include="YellowSign\Towers\TowerConfig.cs" />
   </ItemGroup>

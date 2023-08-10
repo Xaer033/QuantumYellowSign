@@ -6,8 +6,8 @@ namespace Quantum
     public enum AttackType
     {
         HitScan = 0,
-        Arrow   = 1,
-        Melee   = 2
+        Projectile   = 1,
+        Melee   = 2,
     }
 
     public enum DamageType
@@ -17,7 +17,7 @@ namespace Quantum
         Fire,
         Ice,
         Venom,
-        Chaos
+        Chaos,
     }
 
     public enum TowerAiState : byte

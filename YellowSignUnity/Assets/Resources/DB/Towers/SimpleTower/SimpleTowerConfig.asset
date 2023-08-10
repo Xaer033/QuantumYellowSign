@@ -24,7 +24,7 @@ MonoBehaviour:
     ReloadDuration:
       RawValue: 65536
     BaseRange:
-      RawValue: 196608
+      RawValue: 327680
     BaseDamage:
       RawValue: 655360
     GoldPrice: 5
