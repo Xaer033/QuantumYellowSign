@@ -19,9 +19,10 @@ namespace Quantum {
         new Sample.ItemTileSystem(),
         new Sample.CallbackMoveSystem(),
         new Sample.ClickMoveSystem(),
-        new Sample.EditTileMapSystem(),
+        // new Sample.EditTileMapSystem(),
         new Sample.AIDecisionSystem(),
         
+        new TowerSpawnerSystem(),
         new TowerSystem(),
       };
     }

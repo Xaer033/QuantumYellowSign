@@ -71,11 +71,21 @@ MonoBehaviour:
         Id:
           Value: 1429642159575245046
       ResourcePath: DB/1) Simple Click Movement/TileAgentConfig 1
+    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityView
+      AssetRef:
+        Id:
+          Value: 1501518967193857022
+      ResourcePath: DB/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/3) Edit Tile Map/HexagonalMap
       AssetRef:
         Id:
           Value: 1618381908283743571
       ResourcePath: DB/3) Edit Tile Map/HexagonalMap
+    - Path: Resources/DB/CharacterController3DConfigAsset
+      AssetRef:
+        Id:
+          Value: 1662281601401083702
+      ResourcePath: DB/CharacterController3DConfigAsset
     - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityPrototype
       AssetRef:
         Id:
@@ -116,11 +126,6 @@ MonoBehaviour:
         Id:
           Value: 3574747537837414300
       ResourcePath: DB/TestMap/TestMap_mesh
-    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityView
-      AssetRef:
-        Id:
-          Value: 3613963025335521952
-      ResourcePath: DB/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/4) Decide the best target/TileMap 4
       AssetRef:
         Id:

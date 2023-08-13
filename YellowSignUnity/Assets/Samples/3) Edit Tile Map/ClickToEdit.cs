@@ -2,10 +2,13 @@ using UnityEngine;
 using Quantum;
 using Photon.Deterministic;
 using Quantum.Sample;
+using Quantum.YellowSign;
 using UnityEngine.UI;
 
 public class ClickToEdit : MonoBehaviour
 {
+    public EntityPrototypeAsset _TowerViewAsset;
+    
 
     [SerializeField] Text editionText;
     FPVector3 position;
@@ -45,9 +48,15 @@ public class ClickToEdit : MonoBehaviour
                 if (index != map.PositionToIndex(position)) {
                     position = hit.point.ToFPVector3();
 
-                    CommandEditTile command = new CommandEditTile() {
-                        Position = position,
-                        TileType = isRemoving ? 0 : 1
+                    // CommandEditTile command = new CommandEditTile() {
+                    //     Position = position,
+                    //     TileType = isRemoving ? 0 : 1
+                    // };
+                    CommandSpawnTower command = new()
+                    {
+                        PrototypeGUID = _TowerViewAsset.AssetObject.Guid.Value,
+                        GridPositionIndex = index,
+                        PlayerOwner = 1,
                     };
                     QuantumRunner.Default.Game.SendCommand(command);
                     return;

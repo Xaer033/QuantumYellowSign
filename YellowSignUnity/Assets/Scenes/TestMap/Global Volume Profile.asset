@@ -21,7 +21,7 @@ MonoBehaviour:
     m_Value: 3
   scatter:
     m_OverrideState: 1
-    m_Value: 0.606
+    m_Value: 0.649
   clamp:
     m_OverrideState: 1
     m_Value: 65472
@@ -35,12 +35,37 @@ MonoBehaviour:
     m_OverrideState: 1
     m_Value: 1
   dirtTexture:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: {fileID: 0}
     dimension: 1
   dirtIntensity:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 0
+--- !u!114 &-6914324824789134171
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29fa0085f50d5e54f8144f766051a691, type: 3}
+  m_Name: FilmGrain
+  m_EditorClassIdentifier: 
+  active: 1
+  type:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0.139
+  response:
+    m_OverrideState: 1
+    m_Value: 0.601
+  texture:
+    m_OverrideState: 0
+    m_Value: {fileID: 0}
 --- !u!114 &-1294417568878871098
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -71,4 +96,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   components:
   - {fileID: -9049218038163596635}
+  - {fileID: 7514384881434342149}
   - {fileID: -1294417568878871098}
+  - {fileID: -6914324824789134171}
+--- !u!114 &7514384881434342149
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66f335fb1ffd8684294ad653bf1c7564, type: 3}
+  m_Name: ColorAdjustments
+  m_EditorClassIdentifier: 
+  active: 1
+  postExposure:
+    m_OverrideState: 1
+    m_Value: 0
+  contrast:
+    m_OverrideState: 1
+    m_Value: 26
+  colorFilter:
+    m_OverrideState: 0
+    m_Value: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+  hueShift:
+    m_OverrideState: 0
+    m_Value: 175
+  saturation:
+    m_OverrideState: 1
+    m_Value: 2

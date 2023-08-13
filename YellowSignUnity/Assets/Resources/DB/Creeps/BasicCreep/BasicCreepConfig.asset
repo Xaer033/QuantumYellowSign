@@ -19,7 +19,7 @@ MonoBehaviour:
         Value: 1386150637026422715
     MovementType: 2
     Velocity:
-      RawValue: 196608
+      RawValue: 393216
     DistanceToReach:
       RawValue: 10485
     MaxNumberOfWaypoints: 7

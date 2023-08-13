@@ -61,10 +61,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -74,9 +71,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -86,11 +83,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -136,87 +133,6 @@ MonoBehaviour:
     ItemsInTile: []
     PlayerLink:
     - Player:
-        _index: 0
-    RuntimeTileMap: []
-    SearchData: []
-    TilePathfinder: []
-    Tower:
-    - Config:
-        Id:
-          Value: 1086777800636263449
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 2
-        SphereRadius:
-          RawValue: 0
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 32768
-          Y:
-            RawValue: 32768
-          Z:
-            RawValue: 32768
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 0
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: 32768
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 98304
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
         _index: 1
     RuntimeTileMap: []
     SearchData: []
@@ -254,11 +170,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -341,11 +257,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -428,11 +344,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -515,11 +431,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -602,11 +518,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -689,11 +605,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -776,11 +692,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -863,11 +779,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -950,11 +866,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1037,11 +953,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1124,11 +1040,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1211,11 +1127,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1298,11 +1214,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1385,11 +1301,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1472,11 +1388,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1559,11 +1475,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
@@ -1646,11 +1562,11 @@ MonoBehaviour:
             RawValue: 0
         BoxExtents:
           X:
-            RawValue: 32768
+            RawValue: 9830
           Y:
-            RawValue: 32768
+            RawValue: 9830
           Z:
-            RawValue: 32768
+            RawValue: 9830
         RotationOffset:
           X:
             RawValue: 0
