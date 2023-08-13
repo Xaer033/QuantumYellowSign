@@ -105,7 +105,7 @@ MonoBehaviour:
     - Index: 42
       TileType: 0
     - Index: 43
-      TileType: 1
+      TileType: 0
     - Index: 44
       TileType: 0
     - Index: 45
@@ -621,11 +621,11 @@ MonoBehaviour:
     HEIGHT: 10
     WIDTH: 30
     TileWidth:
-      RawValue: 65536
+      RawValue: 65535
     TileHeight:
       RawValue: 65536
     OffsetX:
-      RawValue: -950272
+      RawValue: -950271
     OffsetY:
       RawValue: -294912
     Neighbors:

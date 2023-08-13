@@ -51,6 +51,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -135,6 +136,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -222,6 +224,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -309,6 +312,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -396,6 +400,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -483,6 +488,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -570,6 +576,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -657,6 +664,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -744,6 +752,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -831,6 +840,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -918,6 +928,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1005,6 +1016,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1092,6 +1104,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1179,6 +1192,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1266,6 +1280,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1353,6 +1368,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1440,6 +1456,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1527,6 +1544,7 @@ MonoBehaviour:
     - Player:
         _index: 1
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
@@ -1616,6 +1634,8 @@ MonoBehaviour:
         Id:
           Value: 2047663679722660033
       Tiles: 
+    RuntimeTowerMap:
+    - Towers: []
     SearchData: []
     TilePathfinder: []
     Tower: []

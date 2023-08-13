@@ -101,6 +101,7 @@
     <Compile Include="YellowSign\Commands\CommandSpawnTower.cs" />
     <Compile Include="YellowSign\Systems\TowerSpawnerSystem.cs" />
     <Compile Include="YellowSign\Systems\TowerSystem.cs" />
+    <Compile Include="YellowSign\Towers\RuntimeTowerMap.cs" />
     <Compile Include="YellowSign\Towers\TowerConfig.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -3514,6 +3514,7 @@ GameObject:
   - component: {fileID: 625515073}
   - component: {fileID: 625515072}
   - component: {fileID: 625515071}
+  - component: {fileID: 625515075}
   m_Layer: 0
   m_Name: RuntimeMap
   m_TagString: Untagged
@@ -3731,6 +3732,20 @@ Transform:
   m_Father: {fileID: 1227307496}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &625515075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625515070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 923dea0a180b2df4a9093adbf621e41d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Towers: []
 --- !u!1 &654236606
 GameObject:
   m_ObjectHideFlags: 0
@@ -5430,10 +5445,10 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 72
   Tolerance: 0.25
-  stepX: 1
-  stepY: 1.0000001
-  offsetX: -14.5
-  offsetY: -4.5000005
+  stepX: 0.99999994
+  stepY: 1
+  offsetX: -14.499999
+  offsetY: -4.5
   hexagon: {fileID: -2124705421725058983, guid: cdea1da5e88d7e3499cf74240c47476f,
     type: 3}
   mesh: {fileID: 0}

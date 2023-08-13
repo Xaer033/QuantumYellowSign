@@ -23,3 +23,8 @@ component Tower
 	[ExcludeFromPrototype]
 	FP ThinkTickTimer;
 }
+
+singleton component RuntimeTowerMap
+{
+	dictionary<int,entity_ref> Towers;
+} 

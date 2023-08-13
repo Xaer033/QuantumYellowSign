@@ -1,7 +1,6 @@
 using UnityEngine;
 using Quantum;
 using Photon.Deterministic;
-using Quantum.Sample;
 using Quantum.YellowSign;
 using UnityEngine.UI;
 
@@ -20,12 +19,6 @@ public class ClickToEdit : MonoBehaviour
     bool invert;
 
     public void ChangeEdition() {
-        /*isRemoving = !isRemoving;
-        if (isRemoving) {
-            editionText.text = baseText + removeWalls;
-        } else {
-            editionText.text = baseText + addWalls;
-        }*/
     }
 
     void Update()
@@ -48,16 +41,25 @@ public class ClickToEdit : MonoBehaviour
                 if (index != map.PositionToIndex(position)) {
                     position = hit.point.ToFPVector3();
 
-                    // CommandEditTile command = new CommandEditTile() {
-                    //     Position = position,
-                    //     TileType = isRemoving ? 0 : 1
-                    // };
-                    CommandSpawnTower command = new()
+                    DeterministicCommand command;
+                    
+                    if (!isRemoving)
                     {
-                        PrototypeGUID = _TowerViewAsset.AssetObject.Guid.Value,
-                        GridPositionIndex = index,
-                        PlayerOwner = 1,
-                    };
+                        command = new CommandSpawnTower()
+                        {
+                            PrototypeGUID = _TowerViewAsset.AssetObject.Guid.Value,
+                            GridPositionIndex = index,
+                            PlayerOwner = 1,
+                        };
+                    }
+                    else
+                    {
+                        command = new CommandDestroyTower()
+                        {
+                            GridPositionIndex = index,
+                        };
+                    }
+                    
                     QuantumRunner.Default.Game.SendCommand(command);
                     return;
                 }

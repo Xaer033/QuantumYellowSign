@@ -21,8 +21,11 @@ public unsafe class TowerView : EntityView
         if (!EntityRef.IsValid)
             return;
 
-        var tower = e.Game.Frames.Predicted.Unsafe.GetPointer<Tower>(EntityRef);
-        _GunBarrel.rotation = tower->BarrelRotation.ToUnityQuaternion() * Quaternion.Euler(_RotationOffset);
+        if (e.Game.Frames.Predicted.Has<Tower>(EntityRef))
+        {
+            var tower = e.Game.Frames.Predicted.Unsafe.GetPointer<Tower>(EntityRef);
+            _GunBarrel.rotation = tower->BarrelRotation.ToUnityQuaternion() * Quaternion.Euler(_RotationOffset);
+        }
     }
 
     private void OnDestroy()

@@ -49,6 +49,33 @@ namespace Quantum.Prototypes.Unity {
     }
   }
   [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.RuntimeTowerMap))]
+  public class RuntimeTowerMap_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.RuntimeTowerMap_Prototype> {
+    [Quantum.Inspector.DictionaryAttribute()]
+    [Quantum.Inspector.DynamicCollectionAttribute()]
+    public DictionaryEntry_Int32_EntityRef_Prototype[] Towers = System.Array.Empty<DictionaryEntry_Int32_EntityRef_Prototype>();
+
+    public sealed override Quantum.Prototypes.RuntimeTowerMap_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.RuntimeTowerMap_Prototype();
+      result.Towers = System.Array.ConvertAll(this.Towers, x => x.Convert(converter));
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
+  [Quantum.Prototypes.PrototypeAttribute(typeof(System.Collections.Generic.KeyValuePair<System.Int32, Quantum.EntityRef>))]
+  public class DictionaryEntry_Int32_EntityRef_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.DictionaryEntry_Int32_EntityRef_Prototype> {
+    public System.Int32 Key;
+    [Quantum.LocalReference]
+    public global::EntityPrototype Value;
+
+    public sealed override Quantum.Prototypes.DictionaryEntry_Int32_EntityRef_Prototype Convert(EntityPrototypeConverter converter) {
+      var result = new Quantum.Prototypes.DictionaryEntry_Int32_EntityRef_Prototype();
+      result.Key = this.Key;
+      converter.Convert(this.Value, out result.Value);
+      return result;
+    }
+  }
+  [System.SerializableAttribute()]
   [Quantum.Prototypes.PrototypeAttribute(typeof(Quantum.SearchData))]
   public class SearchData_Prototype : Quantum.PrototypeAdapter<Quantum.Prototypes.SearchData_Prototype> {
     [Quantum.LocalReference]

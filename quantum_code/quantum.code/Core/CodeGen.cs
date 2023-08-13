@@ -1076,6 +1076,40 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct RuntimeTowerMap : Quantum.IComponentSingleton {
+    public const Int32 SIZE = 4;
+    public const Int32 ALIGNMENT = 4;
+    [FieldOffset(0)]
+    [FramePrinter.PtrQDictionaryAttribute(typeof(Int32), typeof(EntityRef))]
+    private Quantum.Ptr TowersPtr;
+    public QDictionaryPtr<Int32, EntityRef> Towers {
+      get {
+        return new QDictionaryPtr<Int32, EntityRef>(TowersPtr);
+      }
+      set {
+        TowersPtr = value.Ptr;
+      }
+    }
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 131;
+        hash = hash * 31 + TowersPtr.GetHashCode();
+        return hash;
+      }
+    }
+    public void ClearPointers(Frame f, EntityRef entity) {
+      TowersPtr = default;
+    }
+    public static void OnRemoved(FrameBase frame, EntityRef entity, void* ptr) {
+      var p = (RuntimeTowerMap*)ptr;
+      p->ClearPointers((Frame)frame, entity);
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (RuntimeTowerMap*)ptr;
+        QDictionary.Serialize(p->Towers, &p->TowersPtr, serializer, StaticDelegates.SerializeInt32, StaticDelegates.SerializeEntityRef);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct SearchData : Quantum.IComponent {
     public const Int32 SIZE = 16;
     public const Int32 ALIGNMENT = 8;
@@ -1085,7 +1119,7 @@ namespace Quantum {
     public EntityRef Entity;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 131;
+        var hash = 137;
         hash = hash * 31 + Cost.GetHashCode();
         hash = hash * 31 + Entity.GetHashCode();
         return hash;
@@ -1120,7 +1154,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 137;
+        var hash = 139;
         hash = hash * 31 + Agent.GetHashCode();
         hash = hash * 31 + CurrentWaypoint.GetHashCode();
         hash = hash * 31 + TargetPosition.GetHashCode();
@@ -1175,7 +1209,7 @@ namespace Quantum {
     public FP ThinkTickTimer;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 139;
+        var hash = 149;
         hash = hash * 31 + AiState.GetHashCode();
         hash = hash * 31 + BarrelRotation.GetHashCode();
         hash = hash * 31 + Config.GetHashCode();
@@ -1221,6 +1255,7 @@ namespace Quantum {
         ComponentTypeId.Add<Quantum.ItemsInTile>(Quantum.ItemsInTile.Serialize, null, Quantum.ItemsInTile.OnRemoved, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.PlayerLink>(Quantum.PlayerLink.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.RuntimeTileMap>(Quantum.RuntimeTileMap.Serialize, null, Quantum.RuntimeTileMap.OnRemoved, ComponentFlags.Singleton);
+        ComponentTypeId.Add<Quantum.RuntimeTowerMap>(Quantum.RuntimeTowerMap.Serialize, null, Quantum.RuntimeTowerMap.OnRemoved, ComponentFlags.Singleton);
         ComponentTypeId.Add<Quantum.SearchData>(Quantum.SearchData.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.TilePathfinder>(Quantum.TilePathfinder.Serialize, null, Quantum.TilePathfinder.OnRemoved, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.Tower>(Quantum.Tower.Serialize, null, null, ComponentFlags.None);
@@ -1265,6 +1300,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<Quantum.PlayerLink>();
       BuildSignalsArrayOnComponentAdded<Quantum.RuntimeTileMap>();
       BuildSignalsArrayOnComponentRemoved<Quantum.RuntimeTileMap>();
+      BuildSignalsArrayOnComponentAdded<Quantum.RuntimeTowerMap>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.RuntimeTowerMap>();
       BuildSignalsArrayOnComponentAdded<Quantum.SearchData>();
       BuildSignalsArrayOnComponentRemoved<Quantum.SearchData>();
       BuildSignalsArrayOnComponentAdded<Quantum.TilePathfinder>();
@@ -1474,6 +1511,9 @@ namespace Quantum {
     public virtual void Visit(Prototypes.RuntimeTileMap_Prototype prototype) {
       VisitFallback(prototype);
     }
+    public virtual void Visit(Prototypes.RuntimeTowerMap_Prototype prototype) {
+      VisitFallback(prototype);
+    }
     public virtual void Visit(Prototypes.SearchData_Prototype prototype) {
       VisitFallback(prototype);
     }
@@ -1581,6 +1621,7 @@ namespace Quantum {
       Register(typeof(Quantum.Ptr), Quantum.Ptr.SIZE);
       Register(typeof(RNGSession), RNGSession.SIZE);
       Register(typeof(Quantum.RuntimeTileMap), Quantum.RuntimeTileMap.SIZE);
+      Register(typeof(Quantum.RuntimeTowerMap), Quantum.RuntimeTowerMap.SIZE);
       Register(typeof(Quantum.SearchData), Quantum.SearchData.SIZE);
       Register(typeof(Shape2D), Shape2D.SIZE);
       Register(typeof(Shape3D), Shape3D.SIZE);
@@ -1675,6 +1716,12 @@ namespace Quantum.Prototypes {
   public unsafe partial class DictionaryEntry_EntityRef_Int32_Prototype : DictionaryEntryPrototype {
     public MapEntityId Key;
     public Int32 Value;
+  }
+  [System.SerializableAttribute()]
+  [Prototype(typeof(KeyValuePair<Int32, EntityRef>))]
+  public unsafe partial class DictionaryEntry_Int32_EntityRef_Prototype : DictionaryEntryPrototype {
+    public Int32 Key;
+    public MapEntityId Value;
   }
   [System.SerializableAttribute()]
   [Prototype(typeof(AIDecision))]
@@ -1821,6 +1868,38 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
+  [Prototype(typeof(RuntimeTowerMap))]
+  public sealed unsafe partial class RuntimeTowerMap_Prototype : ComponentPrototype<RuntimeTowerMap> {
+    [DictionaryAttribute()]
+    [DynamicCollectionAttribute()]
+    public DictionaryEntry_Int32_EntityRef_Prototype[] Towers = {};
+    partial void MaterializeUser(Frame frame, ref RuntimeTowerMap result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+      RuntimeTowerMap component = default;
+      Materialize((Frame)f, ref component, in context);
+      return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref RuntimeTowerMap result, in PrototypeMaterializationContext context) {
+      if (this.Towers.Length == 0) {
+        result.Towers = default;
+      } else {
+        var dict = frame.AllocateDictionary(result.Towers, this.Towers.Length);
+        for (int i = 0; i < this.Towers.Length; ++i) {
+          Int32 tmpKey = default;
+          EntityRef tmpValue = default;
+          tmpKey = this.Towers[i].Key;
+          PrototypeValidator.FindMapEntity(this.Towers[i].Value, in context, out tmpValue);
+          PrototypeValidator.AddToDictionary(dict, tmpKey, tmpValue, in context);
+        }
+        result.Towers = dict;
+      }
+      MaterializeUser(frame, ref result, in context);
+    }
+    public override void Dispatch(ComponentPrototypeVisitorBase visitor) {
+      ((ComponentPrototypeVisitor)visitor).Visit(this);
+    }
+  }
+  [System.SerializableAttribute()]
   [Prototype(typeof(SearchData))]
   public sealed unsafe partial class SearchData_Prototype : ComponentPrototype<SearchData> {
     public MapEntityId Entity;
@@ -1905,6 +1984,8 @@ namespace Quantum.Prototypes {
     [ArrayLength(0, 1)]
     public List<Prototypes.RuntimeTileMap_Prototype> RuntimeTileMap;
     [ArrayLength(0, 1)]
+    public List<Prototypes.RuntimeTowerMap_Prototype> RuntimeTowerMap;
+    [ArrayLength(0, 1)]
     public List<Prototypes.SearchData_Prototype> SearchData;
     [ArrayLength(0, 1)]
     public List<Prototypes.TilePathfinder_Prototype> TilePathfinder;
@@ -1916,6 +1997,7 @@ namespace Quantum.Prototypes {
       Collect(ItemsInTile, target);
       Collect(PlayerLink, target);
       Collect(RuntimeTileMap, target);
+      Collect(RuntimeTowerMap, target);
       Collect(SearchData, target);
       Collect(TilePathfinder, target);
       Collect(Tower, target);
@@ -1935,6 +2017,9 @@ namespace Quantum.Prototypes {
       }
       public override void Visit(Prototypes.RuntimeTileMap_Prototype prototype) {
         Storage.Store(prototype, ref Storage.RuntimeTileMap);
+      }
+      public override void Visit(Prototypes.RuntimeTowerMap_Prototype prototype) {
+        Storage.Store(prototype, ref Storage.RuntimeTowerMap);
       }
       public override void Visit(Prototypes.SearchData_Prototype prototype) {
         Storage.Store(prototype, ref Storage.SearchData);
