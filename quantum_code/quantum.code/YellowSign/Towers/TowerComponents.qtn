@@ -26,5 +26,6 @@ component Tower
 
 singleton component RuntimeTowerMap
 {
+	[ExcludeFromPrototype]
 	dictionary<int,entity_ref> Towers;
 } 

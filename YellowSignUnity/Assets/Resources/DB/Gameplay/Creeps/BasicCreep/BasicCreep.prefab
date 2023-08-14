@@ -470,7 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityView
+      Path: Resources/DB/Gameplay/Creeps/BasicCreep/BasicCreep|EntityView
       Guid:
         Value: 2341898971168645702
   Parent: {fileID: 1785706753558876016}
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityPrototype
+      Path: Resources/DB/Gameplay/Creeps/BasicCreep/BasicCreep|EntityPrototype
       Guid:
         Value: 2027169356565845022
   Parent: {fileID: 1785706753558876023}

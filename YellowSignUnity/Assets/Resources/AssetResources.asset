@@ -46,6 +46,11 @@ MonoBehaviour:
         Id:
           Value: 36545469664743747
       ResourcePath: DB/3) Edit Tile Map/TileAgentConfig 3
+    - Path: Resources/DB/Gameplay/Projectiles/Bullet/Bullet|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 163211087169639888
+      ResourcePath: DB/Gameplay/Projectiles/Bullet/Bullet
     - Path: Resources/DB/2) Move With Callback/TileMap2 - 8 directions
       AssetRef:
         Id:
@@ -56,26 +61,31 @@ MonoBehaviour:
         Id:
           Value: 708601147969587546
       ResourcePath: DB/TestMap/TestMap
-    - Path: Resources/DB/Towers/SimpleTower/SimpleTowerConfig
+    - Path: Resources/DB/Gameplay/Projectiles/Bullet/BulletConfig
+      AssetRef:
+        Id:
+          Value: 987402123193904440
+      ResourcePath: DB/Gameplay/Projectiles/Bullet/BulletConfig
+    - Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTowerConfig
       AssetRef:
         Id:
           Value: 1086777800636263449
-      ResourcePath: DB/Towers/SimpleTower/SimpleTowerConfig
-    - Path: Resources/DB/Creeps/BasicCreep/BasicCreepConfig
+      ResourcePath: DB/Gameplay/Towers/SimpleTower/SimpleTowerConfig
+    - Path: Resources/DB/Gameplay/Creeps/BasicCreep/BasicCreepConfig
       AssetRef:
         Id:
           Value: 1386150637026422715
-      ResourcePath: DB/Creeps/BasicCreep/BasicCreepConfig
+      ResourcePath: DB/Gameplay/Creeps/BasicCreep/BasicCreepConfig
     - Path: Resources/DB/1) Simple Click Movement/TileAgentConfig 1
       AssetRef:
         Id:
           Value: 1429642159575245046
       ResourcePath: DB/1) Simple Click Movement/TileAgentConfig 1
-    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityView
+    - Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTower|EntityView
       AssetRef:
         Id:
           Value: 1501518967193857022
-      ResourcePath: DB/Towers/SimpleTower/SimpleTower
+      ResourcePath: DB/Gameplay/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/3) Edit Tile Map/HexagonalMap
       AssetRef:
         Id:
@@ -86,31 +96,36 @@ MonoBehaviour:
         Id:
           Value: 1662281601401083702
       ResourcePath: DB/CharacterController3DConfigAsset
-    - Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityPrototype
+    - Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTower|EntityPrototype
       AssetRef:
         Id:
           Value: 1691852922248909936
-      ResourcePath: DB/Towers/SimpleTower/SimpleTower
+      ResourcePath: DB/Gameplay/Towers/SimpleTower/SimpleTower
     - Path: Resources/DB/Map1
       AssetRef:
         Id:
           Value: 1710471675203725834
       ResourcePath: DB/Map1
-    - Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityPrototype
+    - Path: Resources/DB/Gameplay/Creeps/BasicCreep/BasicCreep|EntityPrototype
       AssetRef:
         Id:
           Value: 2027169356565845022
-      ResourcePath: DB/Creeps/BasicCreep/BasicCreep
+      ResourcePath: DB/Gameplay/Creeps/BasicCreep/BasicCreep
     - Path: Resources/DB/TestMap/TestTileMapAsset
       AssetRef:
         Id:
           Value: 2047663679722660033
       ResourcePath: DB/TestMap/TestTileMapAsset
-    - Path: Resources/DB/Creeps/BasicCreep/BasicCreep|EntityView
+    - Path: Resources/DB/Gameplay/Creeps/BasicCreep/BasicCreep|EntityView
       AssetRef:
         Id:
           Value: 2341898971168645702
-      ResourcePath: DB/Creeps/BasicCreep/BasicCreep
+      ResourcePath: DB/Gameplay/Creeps/BasicCreep/BasicCreep
+    - Path: Resources/DB/Gameplay/Projectiles/Bullet/Bullet|EntityView
+      AssetRef:
+        Id:
+          Value: 3097174523436151606
+      ResourcePath: DB/Gameplay/Projectiles/Bullet/Bullet
     - Path: Resources/DB/4) Decide the best target/TileAgentConfig 4
       AssetRef:
         Id:

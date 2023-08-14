@@ -39,6 +39,8 @@ namespace Quantum
         public int        GoldPrice;
         public int        MaxHealth;
 
+        public EntityPrototypeRef ProjectilePrototypeRef;
+
         public bool DrawGizmos;
     }
 }

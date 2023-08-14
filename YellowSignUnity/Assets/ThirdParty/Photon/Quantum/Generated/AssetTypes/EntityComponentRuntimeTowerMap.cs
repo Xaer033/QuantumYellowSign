@@ -4,5 +4,5 @@
 // </auto-generated>
 
 [UnityEngine.DisallowMultipleComponent()]
-public partial class EntityComponentRuntimeTowerMap : EntityComponentBase<Quantum.Prototypes.RuntimeTowerMap_Prototype, Quantum.Prototypes.Unity.RuntimeTowerMap_Prototype> {
+public partial class EntityComponentRuntimeTowerMap : EntityComponentBase<Quantum.Prototypes.RuntimeTowerMap_Prototype> {
 }

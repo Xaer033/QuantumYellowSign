@@ -22,8 +22,11 @@ namespace Quantum {
         // new Sample.EditTileMapSystem(),
         new Sample.AIDecisionSystem(),
         
-        new TowerSpawnerSystem(),
+        new TowerSpawnSystem(),
         new TowerSystem(),
+        
+        new ProjectileSpawnSystem(),
+        new ProjectileSystem(),
       };
     }
   }

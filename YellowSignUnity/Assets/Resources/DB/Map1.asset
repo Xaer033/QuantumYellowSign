@@ -20,9 +20,9 @@ MonoBehaviour:
     UserAsset:
       Id:
         Value: 0
-    Scene: TestMap
-    ScenePath: Assets/Scenes/TestMap.unity
-    SceneGuid: f16010be1ac48e0419f79a00779362fc
+    Scene: 4) Decide the best target
+    ScenePath: Assets/Samples/4) Decide the best target/4) Decide the best target.unity
+    SceneGuid: ea67d88f473a9f141bdca8c1a2c49920
     WorldSize: 256
     BucketsCount: 16
     BucketsSubdivisions: 8
@@ -44,21 +44,25 @@ MonoBehaviour:
     StaticColliders3D: []
     MapEntities: []
   Prototypes:
-  - AIDecision: []
+  - AIDecision:
+    - CurrentTarget:
+        SceneIndexPlusOne: 0
+      Targets: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
+    Projectile: []
     RuntimeTileMap: []
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder:
     - Agent:
         Id:
-          Value: 36545469664743747
+          Value: 3356055576977107508
       Waypoints: 
       TargetPosition: 0
       CurrentWaypoint: 0
+    Tower: []
     CharacterController2D: []
     CharacterController3D:
     - Config:
@@ -81,7 +85,7 @@ MonoBehaviour:
         X:
           RawValue: 32768
         Y:
-          RawValue: 65536
+          RawValue: 32768
         Z:
           RawValue: 32768
       Rotation:
@@ -98,13 +102,16 @@ MonoBehaviour:
     ItemTile: []
     ItemsInTile: []
     PlayerLink: []
+    Projectile: []
     RuntimeTileMap:
     - MapAsset:
         Id:
-          Value: 2047663679722660033
+          Value: 3796966886337513946
       Tiles: 
+    RuntimeTowerMap: []
     SearchData: []
     TilePathfinder: []
+    Tower: []
     CharacterController2D: []
     CharacterController3D: []
     NavMeshAvoidanceAgent: []
@@ -120,6 +127,159 @@ MonoBehaviour:
     Transform2D: []
     Transform2DVertical: []
     Transform3D: []
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    ItemTile:
+    - LastPosition:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+      Block:
+        Value: 0
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -159907
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -170393
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    ItemTile:
+    - LastPosition:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+      Block:
+        Value: 0
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 42598
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 224133
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    ItemTile:
+    - LastPosition:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+      Block:
+        Value: 0
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: 287703
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -559022
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
     View: []
     PhysicsJoints2D: []
     PhysicsJoints3D: []

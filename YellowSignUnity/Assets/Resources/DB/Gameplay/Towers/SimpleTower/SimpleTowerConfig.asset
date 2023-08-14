@@ -14,12 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Towers/SimpleTower/SimpleTowerConfig
+      Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTowerConfig
       Guid:
         Value: 1086777800636263449
     TargetMask:
       BitMask: 128
-    AttackType: 0
+    AttackType: 1
     DamageType: 1
     ReloadDuration:
       RawValue: 65536
@@ -29,4 +29,9 @@ MonoBehaviour:
       RawValue: 655360
     GoldPrice: 5
     MaxHealth: 100
-    DrawGizmos: 1
+    ProjectilePrototypeRef:
+      Asset:
+        Id:
+          Value: 163211087169639888
+      InnerAssetId: 0
+    DrawGizmos: 0

@@ -2,35 +2,38 @@ using UnityEngine;
 using Quantum;
 using Photon.Deterministic;
 using Quantum.YellowSign;
+using UnityEngine.InputSystem;
 using UnityEngine.UI;
+using LayerMask = UnityEngine.LayerMask;
 
 public class ClickToEdit : MonoBehaviour
 {
     public EntityPrototypeAsset _TowerViewAsset;
-    
 
-    [SerializeField] Text editionText;
-    FPVector3 position;
-    bool isRemoving;
-    const string removeWalls = "<color=blue>remove walls</color>";
-    const string addWalls = "<color=blue>add walls</color>";
-    const string baseText = "Press right mouse button to ";
+    public LayerMask _BoardLayerMask;
+    
+    FPVector3        position;
+    bool             isRemoving;
 
     bool invert;
 
-    public void ChangeEdition() {
-    }
-
     void Update()
     {
-        isRemoving = UnityEngine.Input.GetKey(KeyCode.Space);
-        editionText.text = baseText + (isRemoving?removeWalls: addWalls);
+        isRemoving = Keyboard.current.spaceKey.isPressed;
+        
+        if (Mouse.current.rightButton.isPressed)
+        {
+            Vector3 mousePosition = Mouse.current.position.ReadValue();
+            mousePosition.z = Camera.main.farClipPlane;
+            
+            Ray ray = Camera.main.ScreenPointToRay(mousePosition);
 
-        if (UnityEngine.Input.GetMouseButton(1)) {
-            Ray ray = Camera.main.ScreenPointToRay(UnityEngine.Input.mousePosition);
-
-            if (Physics.Raycast(ray, out var hit)) {
-
+            if (Physics.Raycast(ray, out var hit, 1000.0f))
+            {
+                int bitMask = (_BoardLayerMask.value & hit.transform.gameObject.layer);
+                if(bitMask != 0)
+                    return;
+                
                 var f = QuantumRunner.Default.Game.Frames.Predicted;
 
                 var runtimeMap = f.GetSingleton<RuntimeTileMap>();
@@ -49,7 +52,6 @@ public class ClickToEdit : MonoBehaviour
                         {
                             PrototypeGUID = _TowerViewAsset.AssetObject.Guid.Value,
                             GridPositionIndex = index,
-                            PlayerOwner = 1,
                         };
                     }
                     else
@@ -60,7 +62,7 @@ public class ClickToEdit : MonoBehaviour
                         };
                     }
                     
-                    QuantumRunner.Default.Game.SendCommand(command);
+                     QuantumRunner.Default.Game.SendCommand(command);
                     return;
                 }
             }

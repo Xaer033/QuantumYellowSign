@@ -601,6 +601,48 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  [Quantum.AssetRefAttribute(typeof(ProjectileConfig))]
+  [System.SerializableAttribute()]
+  public unsafe partial struct AssetRefProjectileConfig : IEquatable<AssetRefProjectileConfig>, IAssetRef<ProjectileConfig> {
+    public const Int32 SIZE = 8;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public AssetGuid Id;
+    public override String ToString() {
+      return AssetRef.ToString(Id);
+    }
+    public static implicit operator AssetRefProjectileConfig(ProjectileConfig value) {
+      var r = default(AssetRefProjectileConfig);
+      if (value != null) {
+        r.Id = value.Guid;
+      }
+      return r;
+    }
+    public override Boolean Equals(Object obj) {
+      return obj is AssetRefProjectileConfig other && Equals(other);
+    }
+    public Boolean Equals(AssetRefProjectileConfig other) {
+      return Id.Equals(other.Id);
+    }
+    public static Boolean operator ==(AssetRefProjectileConfig a, AssetRefProjectileConfig b) {
+      return a.Id == b.Id;
+    }
+    public static Boolean operator !=(AssetRefProjectileConfig a, AssetRefProjectileConfig b) {
+      return a.Id != b.Id;
+    }
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 71;
+        hash = hash * 31 + Id.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (AssetRefProjectileConfig*)ptr;
+        AssetGuid.Serialize(&p->Id, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   [Quantum.AssetRefAttribute(typeof(TileAgentConfig))]
   [System.SerializableAttribute()]
   public unsafe partial struct AssetRefTileAgentConfig : IEquatable<AssetRefTileAgentConfig>, IAssetRef<TileAgentConfig> {
@@ -632,7 +674,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 71;
+        var hash = 73;
         hash = hash * 31 + Id.GetHashCode();
         return hash;
       }
@@ -674,7 +716,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 73;
+        var hash = 79;
         hash = hash * 31 + Id.GetHashCode();
         return hash;
       }
@@ -716,7 +758,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 79;
+        var hash = 83;
         hash = hash * 31 + Id.GetHashCode();
         return hash;
       }
@@ -758,7 +800,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 83;
+        var hash = 89;
         hash = hash * 31 + Id.GetHashCode();
         return hash;
       }
@@ -800,7 +842,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 89;
+        var hash = 97;
         hash = hash * 31 + Id.GetHashCode();
         return hash;
       }
@@ -821,7 +863,7 @@ namespace Quantum {
     public const int MAX_COUNT = 6;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 97;
+        var hash = 101;
         hash = hash * 31 + click.GetHashCode();
         hash = hash * 31 + position.GetHashCode();
         return hash;
@@ -894,7 +936,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 101;
+        var hash = 103;
         hash = hash * 31 + DeltaTime.GetHashCode();
         hash = hash * 31 + FrameMetaData.GetHashCode();
         hash = hash * 31 + Map.GetHashCode();
@@ -944,7 +986,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 103;
+        var hash = 107;
         hash = hash * 31 + CurrentTarget.GetHashCode();
         hash = hash * 31 + TargetsPtr.GetHashCode();
         return hash;
@@ -973,7 +1015,7 @@ namespace Quantum {
     public FPVector3 LastPosition;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 107;
+        var hash = 109;
         hash = hash * 31 + Block.GetHashCode();
         hash = hash * 31 + LastPosition.GetHashCode();
         return hash;
@@ -1002,7 +1044,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 109;
+        var hash = 113;
         hash = hash * 31 + ItemsPtr.GetHashCode();
         return hash;
       }
@@ -1027,7 +1069,7 @@ namespace Quantum {
     public PlayerRef Player;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 113;
+        var hash = 127;
         hash = hash * 31 + Player.GetHashCode();
         return hash;
       }
@@ -1035,6 +1077,44 @@ namespace Quantum {
     public static void Serialize(void* ptr, FrameSerializer serializer) {
         var p = (PlayerLink*)ptr;
         PlayerRef.Serialize(&p->Player, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct Projectile : Quantum.IComponent {
+    public const Int32 SIZE = 40;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    public AssetRefProjectileConfig Config;
+    [FieldOffset(16)]
+    [ExcludeFromPrototype()]
+    public FP Damage;
+    [FieldOffset(24)]
+    [ExcludeFromPrototype()]
+    public FP SelfDestructTimer;
+    [FieldOffset(32)]
+    [ExcludeFromPrototype()]
+    public FP Speed;
+    [FieldOffset(8)]
+    [ExcludeFromPrototype()]
+    public EntityRef TargetEntityRef;
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 131;
+        hash = hash * 31 + Config.GetHashCode();
+        hash = hash * 31 + Damage.GetHashCode();
+        hash = hash * 31 + SelfDestructTimer.GetHashCode();
+        hash = hash * 31 + Speed.GetHashCode();
+        hash = hash * 31 + TargetEntityRef.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (Projectile*)ptr;
+        Quantum.AssetRefProjectileConfig.Serialize(&p->Config, serializer);
+        EntityRef.Serialize(&p->TargetEntityRef, serializer);
+        FP.Serialize(&p->Damage, serializer);
+        FP.Serialize(&p->SelfDestructTimer, serializer);
+        FP.Serialize(&p->Speed, serializer);
     }
   }
   [StructLayout(LayoutKind.Explicit)]
@@ -1056,7 +1136,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 127;
+        var hash = 137;
         hash = hash * 31 + MapAsset.GetHashCode();
         hash = hash * 31 + TilesPtr.GetHashCode();
         return hash;
@@ -1080,6 +1160,7 @@ namespace Quantum {
     public const Int32 SIZE = 4;
     public const Int32 ALIGNMENT = 4;
     [FieldOffset(0)]
+    [ExcludeFromPrototype()]
     [FramePrinter.PtrQDictionaryAttribute(typeof(Int32), typeof(EntityRef))]
     private Quantum.Ptr TowersPtr;
     public QDictionaryPtr<Int32, EntityRef> Towers {
@@ -1092,7 +1173,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 131;
+        var hash = 139;
         hash = hash * 31 + TowersPtr.GetHashCode();
         return hash;
       }
@@ -1119,7 +1200,7 @@ namespace Quantum {
     public EntityRef Entity;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 137;
+        var hash = 149;
         hash = hash * 31 + Cost.GetHashCode();
         hash = hash * 31 + Entity.GetHashCode();
         return hash;
@@ -1154,7 +1235,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 139;
+        var hash = 151;
         hash = hash * 31 + Agent.GetHashCode();
         hash = hash * 31 + CurrentWaypoint.GetHashCode();
         hash = hash * 31 + TargetPosition.GetHashCode();
@@ -1209,7 +1290,7 @@ namespace Quantum {
     public FP ThinkTickTimer;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 149;
+        var hash = 157;
         hash = hash * 31 + AiState.GetHashCode();
         hash = hash * 31 + BarrelRotation.GetHashCode();
         hash = hash * 31 + Config.GetHashCode();
@@ -1239,6 +1320,7 @@ namespace Quantum {
     private ISignalOnTileMapSearchFailed[] _ISignalOnTileMapSearchFailedSystems;
     private ISignalOnTileMapWaypointReached[] _ISignalOnTileMapWaypointReachedSystems;
     private ISignalOnTileMapMoveAgent[] _ISignalOnTileMapMoveAgentSystems;
+    private ISignalOnProjectileSpawned[] _ISignalOnProjectileSpawnedSystems;
     partial void AllocGen() {
       _globals = (_globals_*)Context.Allocator.AllocAndClear(sizeof(_globals_));
     }
@@ -1254,6 +1336,7 @@ namespace Quantum {
         ComponentTypeId.Add<Quantum.ItemTile>(Quantum.ItemTile.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.ItemsInTile>(Quantum.ItemsInTile.Serialize, null, Quantum.ItemsInTile.OnRemoved, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.PlayerLink>(Quantum.PlayerLink.Serialize, null, null, ComponentFlags.None);
+        ComponentTypeId.Add<Quantum.Projectile>(Quantum.Projectile.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.RuntimeTileMap>(Quantum.RuntimeTileMap.Serialize, null, Quantum.RuntimeTileMap.OnRemoved, ComponentFlags.Singleton);
         ComponentTypeId.Add<Quantum.RuntimeTowerMap>(Quantum.RuntimeTowerMap.Serialize, null, Quantum.RuntimeTowerMap.OnRemoved, ComponentFlags.Singleton);
         ComponentTypeId.Add<Quantum.SearchData>(Quantum.SearchData.Serialize, null, null, ComponentFlags.None);
@@ -1266,6 +1349,7 @@ namespace Quantum {
       _ISignalOnTileMapSearchFailedSystems = BuildSignalsArray<ISignalOnTileMapSearchFailed>();
       _ISignalOnTileMapWaypointReachedSystems = BuildSignalsArray<ISignalOnTileMapWaypointReached>();
       _ISignalOnTileMapMoveAgentSystems = BuildSignalsArray<ISignalOnTileMapMoveAgent>();
+      _ISignalOnProjectileSpawnedSystems = BuildSignalsArray<ISignalOnProjectileSpawned>();
       _ComponentSignalsOnAdded = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       _ComponentSignalsOnRemoved = new ComponentReactiveCallbackInvoker[ComponentTypeId.Type.Length];
       BuildSignalsArrayOnComponentAdded<Quantum.AIDecision>();
@@ -1298,6 +1382,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<PhysicsCollider3D>();
       BuildSignalsArrayOnComponentAdded<Quantum.PlayerLink>();
       BuildSignalsArrayOnComponentRemoved<Quantum.PlayerLink>();
+      BuildSignalsArrayOnComponentAdded<Quantum.Projectile>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.Projectile>();
       BuildSignalsArrayOnComponentAdded<Quantum.RuntimeTileMap>();
       BuildSignalsArrayOnComponentRemoved<Quantum.RuntimeTileMap>();
       BuildSignalsArrayOnComponentAdded<Quantum.RuntimeTowerMap>();
@@ -1355,6 +1441,15 @@ namespace Quantum {
           }
         }
       }
+      public void OnProjectileSpawned(EntityRef entity, EntityRef spawningTower) {
+        var array = _f._ISignalOnProjectileSpawnedSystems;
+        for (Int32 i = 0; i < array.Length; ++i) {
+          var s = array[i];
+          if (_f.SystemIsEnabledInHierarchy((SystemBase)s)) {
+            s.OnProjectileSpawned(_f, entity, spawningTower);
+          }
+        }
+      }
     }
     public unsafe partial struct FrameEvents {
       public const Int32 EVENT_TYPE_COUNT = 2;
@@ -1400,6 +1495,9 @@ namespace Quantum {
       public TileAgentConfig TileAgentConfig(AssetRefTileAgentConfig assetRef) {
          return _f.FindAsset<TileAgentConfig>(assetRef.Id);
       }
+      public ProjectileConfig ProjectileConfig(AssetRefProjectileConfig assetRef) {
+         return _f.FindAsset<ProjectileConfig>(assetRef.Id);
+      }
       public TowerConfig TowerConfig(AssetRefTowerConfig assetRef) {
          return _f.FindAsset<TowerConfig>(assetRef.Id);
       }
@@ -1413,6 +1511,9 @@ namespace Quantum {
   }
   public unsafe interface ISignalOnTileMapMoveAgent : ISignal {
     void OnTileMapMoveAgent(Frame f, EntityRef entity, FPVector3 desiredDirection);
+  }
+  public unsafe interface ISignalOnProjectileSpawned : ISignal {
+    void OnProjectileSpawned(Frame f, EntityRef entity, EntityRef spawningTower);
   }
   public unsafe partial class EventChangePlayerState : EventBase {
     public new const Int32 ID = 0;
@@ -1470,6 +1571,9 @@ namespace Quantum {
     public static void Serialize(this IBitStream stream, ref AssetRefHexagonalMap value) {
       stream.Serialize(ref value.Id.Value);
     }
+    public static void Serialize(this IBitStream stream, ref AssetRefProjectileConfig value) {
+      stream.Serialize(ref value.Id.Value);
+    }
     public static void Serialize(this IBitStream stream, ref AssetRefTileAgentConfig value) {
       stream.Serialize(ref value.Id.Value);
     }
@@ -1493,6 +1597,9 @@ namespace Quantum {
   public unsafe partial class TileAgentConfig : AssetObject {
   }
   [System.SerializableAttribute()]
+  public unsafe partial class ProjectileConfig : AssetObject {
+  }
+  [System.SerializableAttribute()]
   public unsafe partial class TowerConfig : AssetObject {
   }
   public unsafe partial class ComponentPrototypeVisitor : Prototypes.ComponentPrototypeVisitorBase {
@@ -1506,6 +1613,9 @@ namespace Quantum {
       VisitFallback(prototype);
     }
     public virtual void Visit(Prototypes.PlayerLink_Prototype prototype) {
+      VisitFallback(prototype);
+    }
+    public virtual void Visit(Prototypes.Projectile_Prototype prototype) {
       VisitFallback(prototype);
     }
     public virtual void Visit(Prototypes.RuntimeTileMap_Prototype prototype) {
@@ -1554,6 +1664,7 @@ namespace Quantum {
       Register(typeof(AssetRefNavMeshAgentConfig), AssetRefNavMeshAgentConfig.SIZE);
       Register(typeof(AssetRefPhysicsMaterial), AssetRefPhysicsMaterial.SIZE);
       Register(typeof(AssetRefPolygonCollider), AssetRefPolygonCollider.SIZE);
+      Register(typeof(Quantum.AssetRefProjectileConfig), Quantum.AssetRefProjectileConfig.SIZE);
       Register(typeof(AssetRefTerrainCollider), AssetRefTerrainCollider.SIZE);
       Register(typeof(Quantum.AssetRefTileAgentConfig), Quantum.AssetRefTileAgentConfig.SIZE);
       Register(typeof(Quantum.AssetRefTileMap), Quantum.AssetRefTileMap.SIZE);
@@ -1616,6 +1727,7 @@ namespace Quantum {
       Register(typeof(Quantum.PlayerLink), Quantum.PlayerLink.SIZE);
       Register(typeof(PlayerRef), PlayerRef.SIZE);
       Register(typeof(Quantum.PlayerStates), 4);
+      Register(typeof(Quantum.Projectile), Quantum.Projectile.SIZE);
       Register(typeof(Ptr), Ptr.SIZE);
       Register(typeof(QBoolean), QBoolean.SIZE);
       Register(typeof(Quantum.Ptr), Quantum.Ptr.SIZE);
@@ -1641,6 +1753,7 @@ namespace Quantum {
   public unsafe partial class FramePrinterGen {
     public static void EnsureNotStripped() {
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.AssetRefHexagonalMap>();
+      FramePrinter.EnsurePrimitiveNotStripped<Quantum.AssetRefProjectileConfig>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.AssetRefTileAgentConfig>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.AssetRefTileMap>();
       FramePrinter.EnsurePrimitiveNotStripped<Quantum.AssetRefTileMap8>();
@@ -1837,6 +1950,24 @@ namespace Quantum.Prototypes {
     }
   }
   [System.SerializableAttribute()]
+  [Prototype(typeof(Projectile))]
+  public sealed unsafe partial class Projectile_Prototype : ComponentPrototype<Projectile> {
+    public AssetRefProjectileConfig Config;
+    partial void MaterializeUser(Frame frame, ref Projectile result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+      Projectile component = default;
+      Materialize((Frame)f, ref component, in context);
+      return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Projectile result, in PrototypeMaterializationContext context) {
+      result.Config = this.Config;
+      MaterializeUser(frame, ref result, in context);
+    }
+    public override void Dispatch(ComponentPrototypeVisitorBase visitor) {
+      ((ComponentPrototypeVisitor)visitor).Visit(this);
+    }
+  }
+  [System.SerializableAttribute()]
   [Prototype(typeof(RuntimeTileMap))]
   public sealed unsafe partial class RuntimeTileMap_Prototype : ComponentPrototype<RuntimeTileMap> {
     public AssetRefTileMapData MapAsset;
@@ -1870,9 +2001,8 @@ namespace Quantum.Prototypes {
   [System.SerializableAttribute()]
   [Prototype(typeof(RuntimeTowerMap))]
   public sealed unsafe partial class RuntimeTowerMap_Prototype : ComponentPrototype<RuntimeTowerMap> {
-    [DictionaryAttribute()]
-    [DynamicCollectionAttribute()]
-    public DictionaryEntry_Int32_EntityRef_Prototype[] Towers = {};
+    [HideInInspector()]
+    public Int32 _empty_prototype_dummy_field_;
     partial void MaterializeUser(Frame frame, ref RuntimeTowerMap result, in PrototypeMaterializationContext context);
     public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
       RuntimeTowerMap component = default;
@@ -1880,19 +2010,6 @@ namespace Quantum.Prototypes {
       return f.Set(entity, component) == SetResult.ComponentAdded;
     }
     public void Materialize(Frame frame, ref RuntimeTowerMap result, in PrototypeMaterializationContext context) {
-      if (this.Towers.Length == 0) {
-        result.Towers = default;
-      } else {
-        var dict = frame.AllocateDictionary(result.Towers, this.Towers.Length);
-        for (int i = 0; i < this.Towers.Length; ++i) {
-          Int32 tmpKey = default;
-          EntityRef tmpValue = default;
-          tmpKey = this.Towers[i].Key;
-          PrototypeValidator.FindMapEntity(this.Towers[i].Value, in context, out tmpValue);
-          PrototypeValidator.AddToDictionary(dict, tmpKey, tmpValue, in context);
-        }
-        result.Towers = dict;
-      }
       MaterializeUser(frame, ref result, in context);
     }
     public override void Dispatch(ComponentPrototypeVisitorBase visitor) {
@@ -1982,6 +2099,8 @@ namespace Quantum.Prototypes {
     [ArrayLength(0, 1)]
     public List<Prototypes.PlayerLink_Prototype> PlayerLink;
     [ArrayLength(0, 1)]
+    public List<Prototypes.Projectile_Prototype> Projectile;
+    [ArrayLength(0, 1)]
     public List<Prototypes.RuntimeTileMap_Prototype> RuntimeTileMap;
     [ArrayLength(0, 1)]
     public List<Prototypes.RuntimeTowerMap_Prototype> RuntimeTowerMap;
@@ -1996,6 +2115,7 @@ namespace Quantum.Prototypes {
       Collect(ItemTile, target);
       Collect(ItemsInTile, target);
       Collect(PlayerLink, target);
+      Collect(Projectile, target);
       Collect(RuntimeTileMap, target);
       Collect(RuntimeTowerMap, target);
       Collect(SearchData, target);
@@ -2014,6 +2134,9 @@ namespace Quantum.Prototypes {
       }
       public override void Visit(Prototypes.PlayerLink_Prototype prototype) {
         Storage.Store(prototype, ref Storage.PlayerLink);
+      }
+      public override void Visit(Prototypes.Projectile_Prototype prototype) {
+        Storage.Store(prototype, ref Storage.Projectile);
       }
       public override void Visit(Prototypes.RuntimeTileMap_Prototype prototype) {
         Storage.Store(prototype, ref Storage.RuntimeTileMap);

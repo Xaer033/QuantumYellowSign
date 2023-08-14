@@ -707,7 +707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityPrototype
+      Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTower|EntityPrototype
       Guid:
         Value: 1691852922248909936
   Parent: {fileID: 2439865598109010798}
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Settings:
     Identifier:
-      Path: Resources/DB/Towers/SimpleTower/SimpleTower|EntityView
+      Path: Resources/DB/Gameplay/Towers/SimpleTower/SimpleTower|EntityView
       Guid:
         Value: 1501518967193857022
   Parent: {fileID: 3225692424892136140}
