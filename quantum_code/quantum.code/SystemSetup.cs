@@ -19,7 +19,7 @@ namespace Quantum {
         new Sample.ItemTileSystem(),
         new Sample.CallbackMoveSystem(),
         new Sample.ClickMoveSystem(),
-        // new Sample.EditTileMapSystem(),
+        
         new Sample.AIDecisionSystem(),
         
         new TowerSpawnSystem(),
@@ -27,6 +27,8 @@ namespace Quantum {
         
         new ProjectileSpawnSystem(),
         new ProjectileSystem(),
+        
+        new HealthSystem(),
       };
     }
   }

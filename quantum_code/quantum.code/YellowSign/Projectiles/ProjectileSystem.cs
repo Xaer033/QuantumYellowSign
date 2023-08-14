@@ -27,13 +27,16 @@ namespace Quantum.YellowSign
             var projectileConfig = f.FindAsset<ProjectileConfig>(projectile->Config.Id);
             f.Unsafe.TryGetPointer<Transform3D>(entity, out var projectileTransform);
 
-            if (!f.TryGet<Transform3D>(projectile->TargetEntityRef, out var targetTransform))
+            FPVector3 aimDirection;
+            if (f.TryGet<Transform3D>(projectile->TargetEntityRef, out var targetTransform))
             {
-                f.Destroy(entity);
-                return;
+                 aimDirection = (targetTransform.Position - projectileTransform->Position).Normalized;
+            }
+            else
+            {
+                aimDirection = (projectileTransform->Position - projectile->PreviousPosition).Normalized;
             }
 
-            FPVector3 aimDirection = (targetTransform.Position - projectileTransform->Position).Normalized;
             FP distance = projectile->Speed * f.DeltaTime;
 
             Hit3D? hit3D = f.Physics3D.Raycast(projectileTransform->Position, aimDirection, distance, projectileConfig.TargetLayerMask.BitMask);
@@ -41,12 +44,17 @@ namespace Quantum.YellowSign
             if (hit3D != null)
             {
                 // TODO: Deal damage
+                f.Signals.OnProjectileHit(entity, hit3D.Value.Entity, projectile->Damage);
                 
                 projectileTransform->Position = hit3D.Value.Point;
+                
+                /// Set timer to 0 so we get an extra frame to move position to
+                /// hit position, rather than f.Destroy(...) immediately 
                 projectile->SelfDestructTimer = 0;
                 return;
             }
-            
+
+            projectile->PreviousPosition  =  projectileTransform->Position;
             projectileTransform->Position += aimDirection * distance;
             projectile->SelfDestructTimer -= f.DeltaTime;
         }

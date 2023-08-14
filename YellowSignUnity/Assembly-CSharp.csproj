@@ -328,14 +328,14 @@
      <Folder Include="Assets" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Providers" />
-     <Folder Include="Assets\Resources\DB\Creeps" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Creeps" />
      <None Include="Assets\ThirdParty\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Examples\ContextProperty" />
      <Folder Include="Assets\ThirdParty\TextMesh Pro\Sprites" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Examples\Images" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Examples\EnumEqualityCheck" />
-     <Folder Include="Assets\Resources\DB\Towers" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Towers" />
      <Folder Include="Assets\Samples\1) Simple Click Movement" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Addons" />
      <Folder Include="Assets\ThirdParty\Photon\QuantumDemo\Game\Scripts" />
@@ -366,8 +366,10 @@
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
      <Folder Include="Assets\ThirdParty\TextMesh Pro\Resources" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Providers\Checks" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Projectiles" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Triggers" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\UI\Unity\Getters" />
+     <Folder Include="Assets\Resources\DB\Gameplay" />
      <Folder Include="Assets\Src\Gameplay" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Providers\Smootheners" />
      <Folder Include="Assets\Art" />
@@ -395,7 +397,7 @@
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Examples" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <Folder Include="Assets\Resources\DB\Towers\SimpleTower" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Towers\SimpleTower" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
      <Folder Include="Assets\ThirdParty\TAA\Shaders" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_SDF.shader" />
@@ -422,7 +424,7 @@
      <Folder Include="Assets\Src\DataBindingContext" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Examples\ActiveSetter" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Core\Data" />
-     <Folder Include="Assets\Resources\DB\Creeps\BasicCreep" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Creeps\BasicCreep" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
      <Folder Include="Assets\ThirdParty\Plugins" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Providers\Loaders" />
@@ -482,6 +484,7 @@
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\UI\Unity\Setters" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMP_Sprite.shader" />
      <Folder Include="Assets\ThirdParty\Slash.Unity.DataBind\Scripts\Foundation\Setters" />
+     <Folder Include="Assets\Resources\DB\Gameplay\Projectiles\Bullet" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>

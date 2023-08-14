@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1785706753558876023}
   - component: {fileID: 1785706753558876016}
   - component: {fileID: 1785706753558876018}
-  - component: {fileID: 1785706753558876028}
   - component: {fileID: 1785706753558876030}
-  - component: {fileID: 988984796}
+  - component: {fileID: 2374920102840803778}
+  - component: {fileID: 1226042754}
   m_Layer: 7
   m_Name: BasicCreep
   m_TagString: Untagged
@@ -31,8 +31,8 @@ Transform:
   m_GameObject: {fileID: 1785706753558876021}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.46, y: 0, z: 0.5}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4117774248521230971}
   - {fileID: 5101804750937729940}
@@ -63,7 +63,7 @@ MonoBehaviour:
     Material:
       Id:
         Value: 0
-    SourceCollider: {fileID: 988984796}
+    SourceCollider: {fileID: 1226042754}
     IsEnabled: 1
     Shape2D:
       ShapeType: 0
@@ -91,9 +91,9 @@ MonoBehaviour:
       CompoundShapes: []
       IsSetFromSourceCollider: 0
     Shape3D:
-      ShapeType: 2
+      ShapeType: 1
       SphereRadius:
-        RawValue: 0
+        RawValue: 19660
       PositionOffset:
         X:
           RawValue: 0
@@ -127,8 +127,8 @@ MonoBehaviour:
     Version2D: 2
     Version3D: 2
     Config2D: 116
-    Config3D: 58
-    RotationFreeze: 0
+    Config3D: 59
+    RotationFreeze: 255
     Mass:
       RawValue: 65536
     Drag:
@@ -148,9 +148,9 @@ MonoBehaviour:
       Z:
         RawValue: 0
     GravityScale:
-      _hasValue: 0
+      _hasValue: 1
       _value:
-        RawValue: 65536
+        RawValue: 0
   NavMeshPathfinder:
     IsEnabled: 0
     NavMeshAgentConfig:
@@ -236,22 +236,6 @@ MonoBehaviour:
     Waypoints: 
     TargetPosition: 0
     CurrentWaypoint: 0
---- !u!114 &1785706753558876028
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1785706753558876021}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d40818ad888adc3439499bab0a827f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Prototype:
-    Config:
-      Id:
-        Value: 4
 --- !u!114 &1785706753558876030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,8 +251,23 @@ MonoBehaviour:
   Prototype:
     Player:
       _index: 1
---- !u!65 &988984796
-BoxCollider:
+--- !u!114 &2374920102840803778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1785706753558876021}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1f11fb597088f1444b0de303cc579940, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Health:
+      RawValue: 6553600
+--- !u!135 &1226042754
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -278,7 +277,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.3
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1839181762618779181
 GameObject:
@@ -305,7 +304,7 @@ Transform:
   m_GameObject: {fileID: 1839181762618779181}
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5793921327065241121}

@@ -2,7 +2,7 @@
 asset ProjectileConfig;
 
 signal OnProjectileSpawned(entity_ref entity, entity_ref spawningTower);
-
+signal OnProjectileHit(entity_ref projectileEntity, entity_ref targetEntity, FP damage);
 
 component Projectile 
 {
@@ -10,6 +10,9 @@ component Projectile
 	
 	[ExcludeFromPrototype]
 	entity_ref TargetEntityRef;
+	
+	[ExcludeFromPrototype]
+	FPVector3 PreviousPosition;
 	
 	[ExcludeFromPrototype]
 	FP Damage;

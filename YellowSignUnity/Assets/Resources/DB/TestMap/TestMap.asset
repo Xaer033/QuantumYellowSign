@@ -45,6 +45,7 @@ MonoBehaviour:
     MapEntities: []
   Prototypes:
   - AIDecision: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
     PlayerLink: []
@@ -78,6 +79,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 131072000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -164,6 +168,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -195,9 +202,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -253,6 +260,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -284,9 +294,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -342,6 +352,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -373,9 +386,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -431,6 +444,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -462,9 +478,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -520,6 +536,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -551,9 +570,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -609,6 +628,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -640,9 +662,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -698,6 +720,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -729,9 +754,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -787,6 +812,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -818,9 +846,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -876,6 +904,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -907,9 +938,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -965,6 +996,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -996,9 +1030,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1054,6 +1088,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1085,9 +1122,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1143,6 +1180,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1174,9 +1214,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1232,6 +1272,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1263,9 +1306,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1321,6 +1364,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1352,9 +1398,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1410,6 +1456,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1441,9 +1490,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1499,6 +1548,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1530,9 +1582,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0
@@ -1588,6 +1640,9 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    HealthContainer:
+    - Health:
+        RawValue: 6553600
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1619,9 +1674,9 @@ MonoBehaviour:
     PhysicsCollider2D: []
     PhysicsCollider3D:
     - ShapeConfig:
-        ShapeType: 2
+        ShapeType: 1
         SphereRadius:
-          RawValue: 0
+          RawValue: 19660
         PositionOffset:
           X:
             RawValue: 0

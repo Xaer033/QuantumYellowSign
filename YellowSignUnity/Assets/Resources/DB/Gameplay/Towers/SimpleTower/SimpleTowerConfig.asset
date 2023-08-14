@@ -22,7 +22,7 @@ MonoBehaviour:
     AttackType: 1
     DamageType: 1
     ReloadDuration:
-      RawValue: 65536
+      RawValue: 13107
     BaseRange:
       RawValue: 327680
     BaseDamage:
