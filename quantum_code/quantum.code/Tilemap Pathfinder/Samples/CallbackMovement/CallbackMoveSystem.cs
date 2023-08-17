@@ -31,9 +31,16 @@ namespace Quantum.Sample
             var agent = f.FindAsset<TileAgentConfig>(f.Get<TilePathfinder>(entity).Agent.Id);
 
             f.Unsafe.TryGetPointer<PlayerLink>(entity, out var playerLink);
- 
+
+            FPVector3 normalizedDirection = desiredDirection.Normalized;
+            if (f.Unsafe.TryGetPointer<Creep>(entity, out var creep))
+            {
+                creep->Direction = normalizedDirection;
+            }
+            
             if (f.Unsafe.TryGetPointer<Transform3D>(entity, out var transform3D)) {
-                transform3D->Position += desiredDirection.Normalized * f.DeltaTime * agent.Velocity;
+            
+                transform3D->Position += normalizedDirection * f.DeltaTime * agent.Velocity;
             }
         }
 

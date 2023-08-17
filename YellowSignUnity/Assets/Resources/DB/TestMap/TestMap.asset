@@ -45,6 +45,7 @@ MonoBehaviour:
     MapEntities: []
   Prototypes:
   - AIDecision: []
+    Creep: []
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
@@ -79,9 +80,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 131072000
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -168,9 +171,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -189,10 +194,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -260,9 +262,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -281,10 +285,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -352,9 +353,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -373,10 +376,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -444,9 +444,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -465,10 +467,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -536,9 +535,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -557,10 +558,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -628,9 +626,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -649,10 +649,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -720,9 +717,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -741,10 +740,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -812,9 +808,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -833,10 +831,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -904,9 +899,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -925,10 +922,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -996,9 +990,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1017,10 +1013,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1088,9 +1081,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1109,10 +1104,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1180,9 +1172,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1201,10 +1195,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1272,9 +1263,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1293,10 +1286,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1364,9 +1354,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1385,10 +1377,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1456,9 +1445,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1477,10 +1468,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1548,9 +1536,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1569,10 +1559,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []
@@ -1640,9 +1627,11 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
+    Creep:
+    - _empty_prototype_dummy_field_: 0
     HealthContainer:
     - Health:
-        RawValue: 6553600
+        RawValue: 32768000
     ItemTile: []
     ItemsInTile: []
     PlayerLink:
@@ -1661,10 +1650,7 @@ MonoBehaviour:
       CurrentWaypoint: 0
     Tower: []
     CharacterController2D: []
-    CharacterController3D:
-    - Config:
-        Id:
-          Value: 4
+    CharacterController3D: []
     NavMeshAvoidanceAgent: []
     NavMeshAvoidanceObstacle: []
     NavMeshPathfinder: []

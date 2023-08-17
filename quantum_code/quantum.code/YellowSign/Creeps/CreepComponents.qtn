@@ -3,3 +3,9 @@ component HealthContainer
 {
 	FP Health;
 }
+
+component Creep
+{
+	[ExcludeFromPrototype]
+    FPVector3 Direction;
+}

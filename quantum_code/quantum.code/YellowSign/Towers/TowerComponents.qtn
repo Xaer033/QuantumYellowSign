@@ -13,6 +13,8 @@ component Tower
 	[ExcludeFromPrototype]
 	FPQuaternion BarrelRotation;
 	[ExcludeFromPrototype]
+	FPVector3 AimAtPosition;
+	[ExcludeFromPrototype]
 	FP Range;
 	[ExcludeFromPrototype]
 	FP Damage;

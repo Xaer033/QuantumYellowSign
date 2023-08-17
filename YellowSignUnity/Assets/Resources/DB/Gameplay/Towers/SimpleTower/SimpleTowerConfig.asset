@@ -22,11 +22,11 @@ MonoBehaviour:
     AttackType: 1
     DamageType: 1
     ReloadDuration:
-      RawValue: 13107
+      RawValue: 32768
     BaseRange:
       RawValue: 327680
     BaseDamage:
-      RawValue: 655360
+      RawValue: 1310720
     GoldPrice: 5
     MaxHealth: 100
     ProjectilePrototypeRef:

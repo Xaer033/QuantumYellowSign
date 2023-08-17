@@ -17,7 +17,7 @@ namespace Quantum.YellowSign
             var tower = filter.Tower;
             var entity = filter.Entity;
             
-            var towerConfigAsset = f.FindAsset<TowerConfig>(tower->Config.Id);
+            var towerConfig = f.FindAsset<TowerConfig>(tower->Config.Id);
             
             f.TryGet<Transform3D>(entity, out var towerTransform);
                 
@@ -32,7 +32,7 @@ namespace Quantum.YellowSign
                 var hitCollection = f.Physics3D.OverlapShape(
                                                     towerTransform, 
                                                     Shape3D.CreateSphere(tower->Range),
-                                                    towerConfigAsset.TargetMask.BitMask);
+                                                    towerConfig.TargetMask.BitMask);
 
                 if (hitCollection.Count > 0)
                 {
@@ -59,9 +59,11 @@ namespace Quantum.YellowSign
                     tower->AiState = (byte)TowerAiState.SearchingForTarget;
                     return;
                 }
-
-                FPVector3 forward = targetTransform->Position - towerTransform.Position;
-                tower->BarrelRotation = FPQuaternion.LookRotation(forward);
+                
+                FPVector3 aimAtPosition = CalculateAimAheadPoint(f, towerConfig, tower, towerTransform.Position, tower->TargetEntityRef, targetTransform->Position);
+                
+                tower->AimAtPosition  = targetTransform->Position;
+                tower->BarrelRotation = FPQuaternion.LookRotation(aimAtPosition - towerTransform.Position);
 
                 tower->ReloadTime -= f.DeltaTime;
             }
@@ -73,6 +75,52 @@ namespace Quantum.YellowSign
             var towerConfig = f.FindAsset<TowerConfig>(tower->Config.Id);
 
             tower->ReloadTime = towerConfig.ReloadDuration;
+        }
+
+        private FPVector3 CalculateAimAheadPoint(FrameThreadSafe f, TowerConfig towerConfig, Tower* tower, FPVector3 towerPosition, EntityRef target, FPVector3 targetPosition)
+        {
+            var targetAgent = f.Get<TilePathfinder>(target);
+            var targetAgentConfig = f.FindAsset<TileAgentConfig>(targetAgent.Agent.Id);
+            var targetCreep = f.Get<Creep>(target);
+            
+            var projectilePrototype   = f.FindAsset<EntityPrototype>(towerConfig.ProjectilePrototypeRef.AssetId);
+            var projectileConfigAsset = f.FindAsset<ProjectileConfig>("Resources/DB/Gameplay/Projectiles/Bullet/BulletConfig");
+            
+            FPVector3 toTargetDirection  = targetPosition - towerPosition;
+            FPVector3 targetVelocity     = targetAgent.IsMoving ? (targetCreep.Direction * targetAgentConfig.Velocity) : FPVector3.Zero;
+            FP        projectileVelocity = projectileConfigAsset.BaseSpeed;
+
+            FP h = toTargetDirection.Magnitude;
+            FP a = FPVector3.Dot(targetVelocity, targetVelocity) - (projectileVelocity * projectileVelocity);
+            FP b = FP._2 * FPVector3.Dot(targetVelocity, toTargetDirection);
+            FP c = FPVector3.Dot(toTargetDirection, toTargetDirection);
+
+            FPVector3 aimAtPosition = targetPosition;
+           // if (a > FP._0)
+            {
+                FP p       = -b / (FP._2 * a);
+                FP q       = FPMath.Sqrt((b * b) - (FP._4 * a * c)) / (FP._2 * a);
+                
+                FP t1      = p - q;
+                FP t2      = p + q;
+                FP t       = t1;
+                
+                if (t1 > t2 && t2 > FP._0)
+                {
+                    t = t2;
+                }
+
+                if (t < 0)
+                {
+                    return targetPosition;
+                }
+                
+                aimAtPosition = targetPosition + (targetVelocity) * t;
+            }
+            
+                // FPVector3 bulletPath   = aimSpot - towerTransform.Position;
+                // FP        timeToImpact = bulletPath.Magnitude / projectileConfig.BaseSpeed;
+            return aimAtPosition;
         }
     }
 }

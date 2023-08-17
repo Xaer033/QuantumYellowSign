@@ -1006,6 +1006,25 @@ namespace Quantum {
     }
   }
   [StructLayout(LayoutKind.Explicit)]
+  public unsafe partial struct Creep : Quantum.IComponent {
+    public const Int32 SIZE = 24;
+    public const Int32 ALIGNMENT = 8;
+    [FieldOffset(0)]
+    [ExcludeFromPrototype()]
+    public FPVector3 Direction;
+    public override Int32 GetHashCode() {
+      unchecked { 
+        var hash = 109;
+        hash = hash * 31 + Direction.GetHashCode();
+        return hash;
+      }
+    }
+    public static void Serialize(void* ptr, FrameSerializer serializer) {
+        var p = (Creep*)ptr;
+        FPVector3.Serialize(&p->Direction, serializer);
+    }
+  }
+  [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct HealthContainer : Quantum.IComponent {
     public const Int32 SIZE = 8;
     public const Int32 ALIGNMENT = 8;
@@ -1013,7 +1032,7 @@ namespace Quantum {
     public FP Health;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 109;
+        var hash = 113;
         hash = hash * 31 + Health.GetHashCode();
         return hash;
       }
@@ -1033,7 +1052,7 @@ namespace Quantum {
     public FPVector3 LastPosition;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 113;
+        var hash = 127;
         hash = hash * 31 + Block.GetHashCode();
         hash = hash * 31 + LastPosition.GetHashCode();
         return hash;
@@ -1062,7 +1081,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 127;
+        var hash = 131;
         hash = hash * 31 + ItemsPtr.GetHashCode();
         return hash;
       }
@@ -1087,7 +1106,7 @@ namespace Quantum {
     public PlayerRef Player;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 131;
+        var hash = 137;
         hash = hash * 31 + Player.GetHashCode();
         return hash;
       }
@@ -1120,7 +1139,7 @@ namespace Quantum {
     public EntityRef TargetEntityRef;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 137;
+        var hash = 139;
         hash = hash * 31 + Config.GetHashCode();
         hash = hash * 31 + Damage.GetHashCode();
         hash = hash * 31 + PreviousPosition.GetHashCode();
@@ -1159,7 +1178,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 139;
+        var hash = 149;
         hash = hash * 31 + MapAsset.GetHashCode();
         hash = hash * 31 + TilesPtr.GetHashCode();
         return hash;
@@ -1196,7 +1215,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 149;
+        var hash = 151;
         hash = hash * 31 + TowersPtr.GetHashCode();
         return hash;
       }
@@ -1223,7 +1242,7 @@ namespace Quantum {
     public EntityRef Entity;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 151;
+        var hash = 157;
         hash = hash * 31 + Cost.GetHashCode();
         hash = hash * 31 + Entity.GetHashCode();
         return hash;
@@ -1258,7 +1277,7 @@ namespace Quantum {
     }
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 157;
+        var hash = 163;
         hash = hash * 31 + Agent.GetHashCode();
         hash = hash * 31 + CurrentWaypoint.GetHashCode();
         hash = hash * 31 + TargetPosition.GetHashCode();
@@ -1283,12 +1302,15 @@ namespace Quantum {
   }
   [StructLayout(LayoutKind.Explicit)]
   public unsafe partial struct Tower : Quantum.IComponent {
-    public const Int32 SIZE = 96;
+    public const Int32 SIZE = 120;
     public const Int32 ALIGNMENT = 8;
     [FieldOffset(0)]
     [ExcludeFromPrototype()]
     public Byte AiState;
     [FieldOffset(64)]
+    [ExcludeFromPrototype()]
+    public FPVector3 AimAtPosition;
+    [FieldOffset(88)]
     [ExcludeFromPrototype()]
     public FPQuaternion BarrelRotation;
     [FieldOffset(8)]
@@ -1313,8 +1335,9 @@ namespace Quantum {
     public FP ThinkTickTimer;
     public override Int32 GetHashCode() {
       unchecked { 
-        var hash = 163;
+        var hash = 167;
         hash = hash * 31 + AiState.GetHashCode();
+        hash = hash * 31 + AimAtPosition.GetHashCode();
         hash = hash * 31 + BarrelRotation.GetHashCode();
         hash = hash * 31 + Config.GetHashCode();
         hash = hash * 31 + Damage.GetHashCode();
@@ -1336,6 +1359,7 @@ namespace Quantum {
         FP.Serialize(&p->Range, serializer);
         FP.Serialize(&p->ReloadTime, serializer);
         FP.Serialize(&p->ThinkTickTimer, serializer);
+        FPVector3.Serialize(&p->AimAtPosition, serializer);
         FPQuaternion.Serialize(&p->BarrelRotation, serializer);
     }
   }
@@ -1357,6 +1381,7 @@ namespace Quantum {
     static partial void InitStaticGen() {
       ComponentTypeId.Setup(() => {
         ComponentTypeId.Add<Quantum.AIDecision>(Quantum.AIDecision.Serialize, null, Quantum.AIDecision.OnRemoved, ComponentFlags.None);
+        ComponentTypeId.Add<Quantum.Creep>(Quantum.Creep.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.HealthContainer>(Quantum.HealthContainer.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.ItemTile>(Quantum.ItemTile.Serialize, null, null, ComponentFlags.None);
         ComponentTypeId.Add<Quantum.ItemsInTile>(Quantum.ItemsInTile.Serialize, null, Quantum.ItemsInTile.OnRemoved, ComponentFlags.None);
@@ -1384,6 +1409,8 @@ namespace Quantum {
       BuildSignalsArrayOnComponentRemoved<CharacterController2D>();
       BuildSignalsArrayOnComponentAdded<CharacterController3D>();
       BuildSignalsArrayOnComponentRemoved<CharacterController3D>();
+      BuildSignalsArrayOnComponentAdded<Quantum.Creep>();
+      BuildSignalsArrayOnComponentRemoved<Quantum.Creep>();
       BuildSignalsArrayOnComponentAdded<Quantum.HealthContainer>();
       BuildSignalsArrayOnComponentRemoved<Quantum.HealthContainer>();
       BuildSignalsArrayOnComponentAdded<Quantum.ItemTile>();
@@ -1646,6 +1673,9 @@ namespace Quantum {
     public virtual void Visit(Prototypes.AIDecision_Prototype prototype) {
       VisitFallback(prototype);
     }
+    public virtual void Visit(Prototypes.Creep_Prototype prototype) {
+      VisitFallback(prototype);
+    }
     public virtual void Visit(Prototypes.HealthContainer_Prototype prototype) {
       VisitFallback(prototype);
     }
@@ -1726,6 +1756,7 @@ namespace Quantum {
       Register(typeof(CharacterController3D), CharacterController3D.SIZE);
       Register(typeof(ColorRGBA), ColorRGBA.SIZE);
       Register(typeof(ComponentPrototypeRef), ComponentPrototypeRef.SIZE);
+      Register(typeof(Quantum.Creep), Quantum.Creep.SIZE);
       Register(typeof(DistanceJoint), DistanceJoint.SIZE);
       Register(typeof(DistanceJoint3D), DistanceJoint3D.SIZE);
       Register(typeof(EntityPrototypeRef), EntityPrototypeRef.SIZE);
@@ -1908,6 +1939,24 @@ namespace Quantum.Prototypes {
         }
         result.Targets = dict;
       }
+      MaterializeUser(frame, ref result, in context);
+    }
+    public override void Dispatch(ComponentPrototypeVisitorBase visitor) {
+      ((ComponentPrototypeVisitor)visitor).Visit(this);
+    }
+  }
+  [System.SerializableAttribute()]
+  [Prototype(typeof(Creep))]
+  public sealed unsafe partial class Creep_Prototype : ComponentPrototype<Creep> {
+    [HideInInspector()]
+    public Int32 _empty_prototype_dummy_field_;
+    partial void MaterializeUser(Frame frame, ref Creep result, in PrototypeMaterializationContext context);
+    public override Boolean AddToEntity(FrameBase f, EntityRef entity, in PrototypeMaterializationContext context) {
+      Creep component = default;
+      Materialize((Frame)f, ref component, in context);
+      return f.Set(entity, component) == SetResult.ComponentAdded;
+    }
+    public void Materialize(Frame frame, ref Creep result, in PrototypeMaterializationContext context) {
       MaterializeUser(frame, ref result, in context);
     }
     public override void Dispatch(ComponentPrototypeVisitorBase visitor) {
@@ -2155,6 +2204,8 @@ namespace Quantum.Prototypes {
     [ArrayLength(0, 1)]
     public List<Prototypes.AIDecision_Prototype> AIDecision;
     [ArrayLength(0, 1)]
+    public List<Prototypes.Creep_Prototype> Creep;
+    [ArrayLength(0, 1)]
     public List<Prototypes.HealthContainer_Prototype> HealthContainer;
     [ArrayLength(0, 1)]
     public List<Prototypes.ItemTile_Prototype> ItemTile;
@@ -2176,6 +2227,7 @@ namespace Quantum.Prototypes {
     public List<Prototypes.Tower_Prototype> Tower;
     partial void CollectGen(List<ComponentPrototype> target) {
       Collect(AIDecision, target);
+      Collect(Creep, target);
       Collect(HealthContainer, target);
       Collect(ItemTile, target);
       Collect(ItemsInTile, target);
@@ -2190,6 +2242,9 @@ namespace Quantum.Prototypes {
     public unsafe partial class StoreVisitor {
       public override void Visit(Prototypes.AIDecision_Prototype prototype) {
         Storage.Store(prototype, ref Storage.AIDecision);
+      }
+      public override void Visit(Prototypes.Creep_Prototype prototype) {
+        Storage.Store(prototype, ref Storage.Creep);
       }
       public override void Visit(Prototypes.HealthContainer_Prototype prototype) {
         Storage.Store(prototype, ref Storage.HealthContainer);

@@ -114,6 +114,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentTransform2DVertical.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototypeRefWrapper.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentAIDecision.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentProjectile.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceInfoGroup.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\QuantumInspectorAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\NestedAssetBase.cs" />
@@ -162,6 +163,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticEdgeCollider2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\QuantumSimpleReplaySaver.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\PhysicsMaterialAsset.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentHealthContainer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2DVertical.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTransform2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCallbacks3D.cs" />
@@ -183,11 +185,13 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumFrameDifferGUI.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Physics\QuantumStaticSphereCollider3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentNavMeshAgent.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentCreep.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Map\MapDataBakerCallbackAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_InitLayers.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\ProgressBar.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher\QuantumCallbackHandler_LegacyQuantumCallback.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\UnityFileLoader.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\ProjectileConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentPhysicsJoints2D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Entity\EntityPrototype.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\MultiClient\QuantumMultiClientPlayerView.cs" />
@@ -227,9 +231,6 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_AssetBundle.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\IQuantumPrefabNestedAssetHost.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumNetworkCommunicator.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentProjectile.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\ProjectileConfigAsset.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentHealthContainer.cs" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Native" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher" />

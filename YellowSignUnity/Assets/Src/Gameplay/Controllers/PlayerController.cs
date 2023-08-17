@@ -9,6 +9,7 @@ public class PlayerController : ScriptableObject
     private PlayerDataProvider _playerDataProvider = new PlayerDataProvider();
 
 
+    private SimulationConfig _simulationConfig;
     public void OnPlayerDataSet(Frame f, PlayerRef playerRef)
     {
         
@@ -24,6 +25,9 @@ public class PlayerController : ScriptableObject
     {
         _playerDataProvider.GoldAmount.Value = 150;
         _playerDataProvider.TowerSpawnMode.Value = true;
+        //
+        // _simulationConfig             = FindObjectOfType<SimulationConfig>();
+        // _SimulationConfig.ThreadCount = SystemInfo.processorCount;
     }
     
 

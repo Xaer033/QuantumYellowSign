@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonQuantum", "PhotonQuantum.csproj", "{9b3ef7ef-3a22-918b-5015-32ad1ba65938}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThirdParty", "ThirdParty.csproj", "{f0a7ed9b-b85e-b5dc-aeff-4d9d28bd277f}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonRealtime", "PhotonRealtime.csproj", "{dc31d4c2-bf13-b48d-fa72-39fc28546385}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotonQuantumEditor", "PhotonQuantumEditor.csproj", "{9022df57-db3c-5196-eb4d-a33814fa5920}"
 EndProject
@@ -18,10 +20,12 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{9b3ef7ef-3a22-918b-5015-32ad1ba65938}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9b3ef7ef-3a22-918b-5015-32ad1ba65938}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f0a7ed9b-b85e-b5dc-aeff-4d9d28bd277f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f0a7ed9b-b85e-b5dc-aeff-4d9d28bd277f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{dc31d4c2-bf13-b48d-fa72-39fc28546385}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{dc31d4c2-bf13-b48d-fa72-39fc28546385}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9022df57-db3c-5196-eb4d-a33814fa5920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9022df57-db3c-5196-eb4d-a33814fa5920}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4a18387a-60f9-8981-4f0d-9d88e5ca52f2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU

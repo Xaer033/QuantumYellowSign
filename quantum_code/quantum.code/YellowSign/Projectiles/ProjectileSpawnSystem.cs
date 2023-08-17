@@ -32,6 +32,7 @@ namespace Quantum.YellowSign
             projectile->Damage            = projectileConfig.BaseDamage;
             projectile->SelfDestructTimer = projectileConfig.SelfDestructTimeInSeconds;
             projectile->TargetEntityRef   = filter.Tower->TargetEntityRef;
+            projectile->PreviousPosition = projectileTransform->Position + (projectileTransform->Position - filter.Tower->AimAtPosition);
             
             f.Signals.OnProjectileSpawned(projectileEntity, filter.Entity);
         }
