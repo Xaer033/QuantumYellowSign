@@ -4,7 +4,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "YellowSign/PlayerController")]
 public class PlayerController : ScriptableObject
 {
-    public  PlayerDataProvider PlayerDataProvider { get; private set; }
+    public PlayerDataProvider PlayerDataProvider { get; private set; } = new();
     
     private SimulationConfig   _simulationConfig;
     
@@ -21,11 +21,11 @@ public class PlayerController : ScriptableObject
 
     private void OnEnable()
     {
-        // PlayerDataProvider.NotifyChanges(x =>
-        // {
-        //     PlayerDataProvider.GoldAmount = $"{150}";
-        //     PlayerDataProvider.TowerSpawnMode = true;
-        // });
+        PlayerDataProvider.NotifyChanges(x =>
+        {
+            PlayerDataProvider.GoldAmount = $"{150}";
+            PlayerDataProvider.TowerSpawnMode = true;
+        });
         
         
         //

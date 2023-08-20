@@ -333,29 +333,17 @@
      <Reference Include="Photon3Unity3D">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Unsafe">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.Unsafe.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil.Mdb">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Mdb.dll</HintPath>
-     </Reference>
      <Reference Include="quantum.code">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\Quantum\Assemblies\quantum.code.dll</HintPath>
      </Reference>
      <Reference Include="quantum.core">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Assets\ThirdParty\Photon\Quantum\Assemblies\quantum.core.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Cecil.Pdb">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Pdb.dll</HintPath>
-     </Reference>
-     <Reference Include="Unity.Burst.Cecil">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.dll</HintPath>
-     </Reference>
      <Reference Include="log4netPlastic">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.collab-proxy@1.17.2\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
      </Reference>
-     <Reference Include="Unity.Burst.Cecil.Rocks">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.burst@1.7.3\Unity.Burst.CodeGen\Unity.Burst.Cecil.Rocks.dll</HintPath>
+     <Reference Include="ReportGeneratorMerged">
+     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.testtools.codecoverage@1.0.1\lib\ReportGenerator\ReportGeneratorMerged.dll</HintPath>
      </Reference>
      <Reference Include="Newtonsoft.Json">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>

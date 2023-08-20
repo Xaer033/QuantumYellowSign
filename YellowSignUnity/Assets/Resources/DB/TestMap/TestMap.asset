@@ -136,7 +136,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -183,7 +185,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -230,7 +234,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -277,7 +283,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -324,7 +332,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -371,7 +381,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -418,7 +430,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -465,7 +479,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -512,7 +528,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -559,7 +577,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
@@ -606,7 +626,9 @@ MonoBehaviour:
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink: []
+    PlayerLink:
+    - Player:
+        _index: 0
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []

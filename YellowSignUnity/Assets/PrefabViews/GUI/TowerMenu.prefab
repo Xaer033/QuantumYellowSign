@@ -731,7 +731,6 @@ GameObject:
   - component: {fileID: 3398441411230090548}
   - component: {fileID: 1753464638496068189}
   - component: {fileID: 2631740378371798975}
-  - component: {fileID: 3398441411811295753}
   m_Layer: 5
   m_Name: TowerMenu
   m_TagString: Untagged
@@ -775,7 +774,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _PlayerController: {fileID: 11400000, guid: 92cfee0184471a847962e335d9f11bcf, type: 2}
   _Root: {fileID: 6492773491551973390}
-  _View: {fileID: 3398441411811295753}
   _ShowHideButton: {fileID: 1264524404}
   _SpawnTowerModeToggle: {fileID: 1423130834}
 --- !u!225 &2631740378371798975
@@ -790,28 +788,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &3398441411811295753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3398441411230090551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86b5f087a6158b7409c18f4ecd50007e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dataSourceType:
-    assemblyQualifiedName: PlayerDataProvider, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  componentPropertyBindings:
-  - showExpanded: 0
-    targetGameObject: {fileID: 2135804675}
-    targetComponent: {fileID: 0}
-    sourcePath: GoldAmount
-    targetPath: 
-  containerPropertyBindings: []
 --- !u!1 &6492773491551973390
 GameObject:
   m_ObjectHideFlags: 0

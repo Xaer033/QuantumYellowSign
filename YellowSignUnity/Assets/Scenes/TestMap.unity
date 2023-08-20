@@ -1159,6 +1159,34 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     _empty_prototype_dummy_field_: 0
+--- !u!1 &656663284 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3398441411230090551, guid: aaa0082149855d2429bd2a2803f5ef23,
+    type: 3}
+  m_PrefabInstance: {fileID: 3398441411811295746}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &656663285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656663284}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86b5f087a6158b7409c18f4ecd50007e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dataSourceType:
+    assemblyQualifiedName: PlayerDataProvider, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  componentPropertyBindings:
+  - showExpanded: 0
+    targetGameObject: {fileID: 3398441411811295747}
+    targetComponent: {fileID: 0}
+    sourcePath: GoldAmount
+    targetPath: 
+  containerPropertyBindings: []
 --- !u!1 &680950804
 GameObject:
   m_ObjectHideFlags: 0
@@ -3177,9 +3205,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: TowerMenu
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3398441411811295753, guid: aaa0082149855d2429bd2a2803f5ef23, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa0082149855d2429bd2a2803f5ef23, type: 3}
+--- !u!1 &3398441411811295747 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1423130832, guid: aaa0082149855d2429bd2a2803f5ef23,
+    type: 3}
+  m_PrefabInstance: {fileID: 3398441411811295746}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4260853326870391447
 PrefabInstance:
   m_ObjectHideFlags: 0
