@@ -231,6 +231,8 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_AssetBundle.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\IQuantumPrefabNestedAssetHost.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumNetworkCommunicator.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentSpawnPoint.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentEndGoal.cs" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Native" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher" />

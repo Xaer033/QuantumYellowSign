@@ -46,6 +46,7 @@ MonoBehaviour:
   Prototypes:
   - AIDecision: []
     Creep: []
+    EndGoal: []
     HealthContainer: []
     ItemTile: []
     ItemsInTile: []
@@ -59,6 +60,7 @@ MonoBehaviour:
     RuntimeTowerMap:
     - _empty_prototype_dummy_field_: 0
     SearchData: []
+    SpawnPoint: []
     TilePathfinder: []
     Tower: []
     CharacterController2D: []
@@ -80,27 +82,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
+    Creep: []
+    EndGoal:
     - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint: []
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -111,55 +105,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
+          RawValue: 954859
         Y:
           RawValue: 0
         Z:
-          RawValue: 229376
+          RawValue: -32768
       Rotation:
         X:
           RawValue: 0
@@ -171,27 +129,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -202,55 +152,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
+          RawValue: -954859
         Y:
           RawValue: 0
         Z:
-          RawValue: 98304
+          RawValue: 131072
       Rotation:
         X:
           RawValue: 0
@@ -262,27 +176,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -293,55 +199,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
+          RawValue: -954859
         Y:
           RawValue: 0
         Z:
-          RawValue: 16384
+          RawValue: 262144
       Rotation:
         X:
           RawValue: 0
@@ -353,27 +223,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -384,55 +246,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
+          RawValue: -954859
         Y:
           RawValue: 0
         Z:
-          RawValue: -65536
+          RawValue: -262144
       Rotation:
         X:
           RawValue: 0
@@ -444,27 +270,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -475,55 +293,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
+          RawValue: -823787
         Y:
           RawValue: 0
         Z:
-          RawValue: -147456
+          RawValue: -196608
       Rotation:
         X:
           RawValue: 0
@@ -535,27 +317,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -566,870 +340,15 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -669777
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: -229376
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: -229376
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: -147456
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: -49152
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 49152
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 147456
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -768081
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 245760
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -850001
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 245760
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -850001
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 147456
-      Rotation:
-        X:
-          RawValue: 0
-        Y:
-          RawValue: 0
-        Z:
-          RawValue: 0
-    View: []
-    PhysicsJoints2D: []
-    PhysicsJoints3D: []
-  - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
-    ItemTile: []
-    ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
-    Projectile: []
-    RuntimeTileMap: []
-    RuntimeTowerMap: []
-    SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
-    Tower: []
-    CharacterController2D: []
-    CharacterController3D: []
-    NavMeshAvoidanceAgent: []
-    NavMeshAvoidanceObstacle: []
-    NavMeshPathfinder: []
-    NavMeshSteeringAgent: []
-    PhysicsBody2D: []
-    PhysicsBody3D: []
-    PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
-    PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
-    Transform2D: []
-    Transform2DVertical: []
-    Transform3D:
-    - Position:
-        X:
-          RawValue: -850001
+          RawValue: -823787
         Y:
           RawValue: 0
         Z:
@@ -1445,27 +364,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1476,55 +387,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -850001
+          RawValue: -823787
         Y:
           RawValue: 0
         Z:
-          RawValue: -16384
+          RawValue: -327680
       Rotation:
         X:
           RawValue: 0
@@ -1536,27 +411,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1567,55 +434,19 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -850001
+          RawValue: -823787
         Y:
           RawValue: 0
         Z:
-          RawValue: -114688
+          RawValue: 196608
       Rotation:
         X:
           RawValue: 0
@@ -1627,27 +458,19 @@ MonoBehaviour:
     PhysicsJoints2D: []
     PhysicsJoints3D: []
   - AIDecision: []
-    Creep:
-    - _empty_prototype_dummy_field_: 0
-    HealthContainer:
-    - Health:
-        RawValue: 32768000
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
     ItemTile: []
     ItemsInTile: []
-    PlayerLink:
-    - Player:
-        _index: 1
+    PlayerLink: []
     Projectile: []
     RuntimeTileMap: []
     RuntimeTowerMap: []
     SearchData: []
-    TilePathfinder:
-    - Agent:
-        Id:
-          Value: 1386150637026422715
-      Waypoints: 
-      TargetPosition: 0
-      CurrentWaypoint: 0
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
     Tower: []
     CharacterController2D: []
     CharacterController3D: []
@@ -1658,55 +481,160 @@ MonoBehaviour:
     PhysicsBody2D: []
     PhysicsBody3D: []
     PhysicsCollider2D: []
-    PhysicsCollider3D:
-    - ShapeConfig:
-        ShapeType: 1
-        SphereRadius:
-          RawValue: 19660
-        PositionOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        BoxExtents:
-          X:
-            RawValue: 9830
-          Y:
-            RawValue: 9830
-          Z:
-            RawValue: 9830
-        RotationOffset:
-          X:
-            RawValue: 0
-          Y:
-            RawValue: 0
-          Z:
-            RawValue: 0
-        UserTag: 0
-        IsPersistent: 1
-        CompoundShapes: []
-        IsSetFromSourceCollider: 1
-      Layer: 7
-      IsTrigger: 0
-      PhysicsMaterial:
-        Id:
-          Value: 0
+    PhysicsCollider3D: []
     PhysicsCallbacks2D: []
-    PhysicsCallbacks3D:
-    - CallbackFlags:
-        Value: 0
+    PhysicsCallbacks3D: []
     Transform2D: []
     Transform2DVertical: []
     Transform3D:
     - Position:
         X:
-          RawValue: -850001
+          RawValue: -823787
         Y:
           RawValue: 0
         Z:
-          RawValue: -196608
+          RawValue: 327680
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
+    ItemTile: []
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -954859
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -131072
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
+    ItemTile: []
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -823787
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: -65536
+      Rotation:
+        X:
+          RawValue: 0
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
+    View: []
+    PhysicsJoints2D: []
+    PhysicsJoints3D: []
+  - AIDecision: []
+    Creep: []
+    EndGoal: []
+    HealthContainer: []
+    ItemTile: []
+    ItemsInTile: []
+    PlayerLink: []
+    Projectile: []
+    RuntimeTileMap: []
+    RuntimeTowerMap: []
+    SearchData: []
+    SpawnPoint:
+    - _empty_prototype_dummy_field_: 0
+    TilePathfinder: []
+    Tower: []
+    CharacterController2D: []
+    CharacterController3D: []
+    NavMeshAvoidanceAgent: []
+    NavMeshAvoidanceObstacle: []
+    NavMeshPathfinder: []
+    NavMeshSteeringAgent: []
+    PhysicsBody2D: []
+    PhysicsBody3D: []
+    PhysicsCollider2D: []
+    PhysicsCollider3D: []
+    PhysicsCallbacks2D: []
+    PhysicsCallbacks3D: []
+    Transform2D: []
+    Transform2DVertical: []
+    Transform3D:
+    - Position:
+        X:
+          RawValue: -954859
+        Y:
+          RawValue: 0
+        Z:
+          RawValue: 0
       Rotation:
         X:
           RawValue: 0

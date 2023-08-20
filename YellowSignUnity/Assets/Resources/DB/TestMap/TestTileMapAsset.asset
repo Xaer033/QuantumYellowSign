@@ -51,7 +51,7 @@ MonoBehaviour:
     - Index: 15
       TileType: 0
     - Index: 16
-      TileType: 0
+      TileType: 1
     - Index: 17
       TileType: 1
     - Index: 18
@@ -113,11 +113,11 @@ MonoBehaviour:
     - Index: 46
       TileType: 0
     - Index: 47
-      TileType: 0
+      TileType: 1
     - Index: 48
       TileType: 1
     - Index: 49
-      TileType: 0
+      TileType: 1
     - Index: 50
       TileType: 0
     - Index: 51
@@ -618,7 +618,67 @@ MonoBehaviour:
       TileType: 0
     - Index: 299
       TileType: 0
-    HEIGHT: 10
+    - Index: 300
+      TileType: 0
+    - Index: 301
+      TileType: 0
+    - Index: 302
+      TileType: 0
+    - Index: 303
+      TileType: 0
+    - Index: 304
+      TileType: 0
+    - Index: 305
+      TileType: 0
+    - Index: 306
+      TileType: 0
+    - Index: 307
+      TileType: 0
+    - Index: 308
+      TileType: 0
+    - Index: 309
+      TileType: 0
+    - Index: 310
+      TileType: 0
+    - Index: 311
+      TileType: 0
+    - Index: 312
+      TileType: 0
+    - Index: 313
+      TileType: 0
+    - Index: 314
+      TileType: 0
+    - Index: 315
+      TileType: 0
+    - Index: 316
+      TileType: 0
+    - Index: 317
+      TileType: 0
+    - Index: 318
+      TileType: 0
+    - Index: 319
+      TileType: 0
+    - Index: 320
+      TileType: 0
+    - Index: 321
+      TileType: 0
+    - Index: 322
+      TileType: 0
+    - Index: 323
+      TileType: 0
+    - Index: 324
+      TileType: 0
+    - Index: 325
+      TileType: 0
+    - Index: 326
+      TileType: 0
+    - Index: 327
+      TileType: 0
+    - Index: 328
+      TileType: 0
+    - Index: 329
+      TileType: 0
+    HEIGHT: 11
     WIDTH: 30
     TileWidth:
       RawValue: 65535
@@ -627,7 +687,7 @@ MonoBehaviour:
     OffsetX:
       RawValue: -950271
     OffsetY:
-      RawValue: -294912
+      RawValue: -327680
     Neighbors:
     - Values: 1e000000ffffffff01000000ffffffff
     - Values: 1f000000ffffffff0200000000000000
@@ -899,33 +959,63 @@ MonoBehaviour:
     - Values: 29010000ed0000000c0100000a010000
     - Values: 2a010000ee0000000d0100000b010000
     - Values: 2b010000ef000000ffffffff0c010000
-    - Values: fffffffff00000000f010000ffffffff
-    - Values: fffffffff1000000100100000e010000
-    - Values: fffffffff2000000110100000f010000
-    - Values: fffffffff30000001201000010010000
-    - Values: fffffffff40000001301000011010000
-    - Values: fffffffff50000001401000012010000
-    - Values: fffffffff60000001501000013010000
-    - Values: fffffffff70000001601000014010000
-    - Values: fffffffff80000001701000015010000
-    - Values: fffffffff90000001801000016010000
-    - Values: fffffffffa0000001901000017010000
-    - Values: fffffffffb0000001a01000018010000
-    - Values: fffffffffc0000001b01000019010000
-    - Values: fffffffffd0000001c0100001a010000
-    - Values: fffffffffe0000001d0100001b010000
-    - Values: ffffffffff0000001e0100001c010000
-    - Values: ffffffff000100001f0100001d010000
-    - Values: ffffffff01010000200100001e010000
-    - Values: ffffffff02010000210100001f010000
-    - Values: ffffffff030100002201000020010000
-    - Values: ffffffff040100002301000021010000
-    - Values: ffffffff050100002401000022010000
-    - Values: ffffffff060100002501000023010000
-    - Values: ffffffff070100002601000024010000
-    - Values: ffffffff080100002701000025010000
-    - Values: ffffffff090100002801000026010000
-    - Values: ffffffff0a0100002901000027010000
-    - Values: ffffffff0b0100002a01000028010000
-    - Values: ffffffff0c0100002b01000029010000
-    - Values: ffffffff0d010000ffffffff2a010000
+    - Values: 2c010000f00000000f010000ffffffff
+    - Values: 2d010000f1000000100100000e010000
+    - Values: 2e010000f2000000110100000f010000
+    - Values: 2f010000f30000001201000010010000
+    - Values: 30010000f40000001301000011010000
+    - Values: 31010000f50000001401000012010000
+    - Values: 32010000f60000001501000013010000
+    - Values: 33010000f70000001601000014010000
+    - Values: 34010000f80000001701000015010000
+    - Values: 35010000f90000001801000016010000
+    - Values: 36010000fa0000001901000017010000
+    - Values: 37010000fb0000001a01000018010000
+    - Values: 38010000fc0000001b01000019010000
+    - Values: 39010000fd0000001c0100001a010000
+    - Values: 3a010000fe0000001d0100001b010000
+    - Values: 3b010000ff0000001e0100001c010000
+    - Values: 3c010000000100001f0100001d010000
+    - Values: 3d01000001010000200100001e010000
+    - Values: 3e01000002010000210100001f010000
+    - Values: 3f010000030100002201000020010000
+    - Values: 40010000040100002301000021010000
+    - Values: 41010000050100002401000022010000
+    - Values: 42010000060100002501000023010000
+    - Values: 43010000070100002601000024010000
+    - Values: 44010000080100002701000025010000
+    - Values: 45010000090100002801000026010000
+    - Values: 460100000a0100002901000027010000
+    - Values: 470100000b0100002a01000028010000
+    - Values: 480100000c0100002b01000029010000
+    - Values: 490100000d010000ffffffff2a010000
+    - Values: ffffffff0e0100002d010000ffffffff
+    - Values: ffffffff0f0100002e0100002c010000
+    - Values: ffffffff100100002f0100002d010000
+    - Values: ffffffff11010000300100002e010000
+    - Values: ffffffff12010000310100002f010000
+    - Values: ffffffff130100003201000030010000
+    - Values: ffffffff140100003301000031010000
+    - Values: ffffffff150100003401000032010000
+    - Values: ffffffff160100003501000033010000
+    - Values: ffffffff170100003601000034010000
+    - Values: ffffffff180100003701000035010000
+    - Values: ffffffff190100003801000036010000
+    - Values: ffffffff1a0100003901000037010000
+    - Values: ffffffff1b0100003a01000038010000
+    - Values: ffffffff1c0100003b01000039010000
+    - Values: ffffffff1d0100003c0100003a010000
+    - Values: ffffffff1e0100003d0100003b010000
+    - Values: ffffffff1f0100003e0100003c010000
+    - Values: ffffffff200100003f0100003d010000
+    - Values: ffffffff21010000400100003e010000
+    - Values: ffffffff22010000410100003f010000
+    - Values: ffffffff230100004201000040010000
+    - Values: ffffffff240100004301000041010000
+    - Values: ffffffff250100004401000042010000
+    - Values: ffffffff260100004501000043010000
+    - Values: ffffffff270100004601000044010000
+    - Values: ffffffff280100004701000045010000
+    - Values: ffffffff290100004801000046010000
+    - Values: ffffffff2a0100004901000047010000
+    - Values: ffffffff2b010000ffffffff48010000

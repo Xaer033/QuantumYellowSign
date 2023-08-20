@@ -23,6 +23,6 @@ MonoBehaviour:
     BaseDamage:
       RawValue: 655360
     BaseSpeed:
-      RawValue: 1310720
+      RawValue: 1638400
     SelfDestructTimeInSeconds:
       RawValue: 327680

@@ -3,12 +3,13 @@ using Quantum;
 using Photon.Deterministic;
 using Quantum.YellowSign;
 using UnityEngine.InputSystem;
-using UnityEngine.UI;
+
 using LayerMask = UnityEngine.LayerMask;
 
 public class ClickToEdit : MonoBehaviour
 {
     public EntityPrototypeAsset _TowerViewAsset;
+    public EntityPrototypeAsset _CreepViewAsset;
 
     public LayerMask _BoardLayerMask;
     
@@ -20,6 +21,16 @@ public class ClickToEdit : MonoBehaviour
     void Update()
     {
         isRemoving = Keyboard.current.spaceKey.isPressed;
+
+        if (Keyboard.current.sKey.wasPressedThisFrame)
+        {
+            var command = new SpawnCreepsCommand
+            {
+                PrototypeGUID = _CreepViewAsset.AssetObject.Guid.Value,
+            };
+                      
+            QuantumRunner.Default.Game.SendCommand(command);  
+        }
         
         if (Mouse.current.rightButton.isPressed)
         {

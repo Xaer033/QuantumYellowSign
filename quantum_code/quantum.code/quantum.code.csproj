@@ -99,7 +99,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="YellowSign\Commands\CommandDestroyTower.cs" />
     <Compile Include="YellowSign\Commands\CommandSpawnTower.cs" />
+    <Compile Include="YellowSign\Commands\SpawnCreepsCommand.cs" />
     <Compile Include="YellowSign\Creeps\HealthSystem.cs" />
+    <Compile Include="YellowSign\Creeps\SpawnCreepSystem.cs" />
     <Compile Include="YellowSign\Projectiles\ProjectileConfig.cs" />
     <Compile Include="YellowSign\Projectiles\ProjectileSpawnSystem.cs" />
     <Compile Include="YellowSign\Projectiles\ProjectileSystem.cs" />

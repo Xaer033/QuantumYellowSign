@@ -9,3 +9,11 @@ component Creep
 	[ExcludeFromPrototype]
     FPVector3 Direction;
 }
+
+component SpawnPoint
+{
+}
+
+component EndGoal
+{
+}

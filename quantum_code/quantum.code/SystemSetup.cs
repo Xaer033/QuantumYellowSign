@@ -29,6 +29,8 @@ namespace Quantum {
         new ProjectileSystem(),
         
         new HealthSystem(),
+        
+        new SpawnCreepSystem(),
       };
     }
   }

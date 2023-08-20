@@ -51,6 +51,7 @@
      <Compile Include="Assets\Src\Gameplay\UI\TowerMenu.cs" />
      <Compile Include="Assets\Samples\3) Edit Tile Map\WallsPool.cs" />
      <Compile Include="Assets\Src\Gameplay\Towers\TowerView.cs" />
+     <Compile Include="Assets\Src\Utilities\DebugDrawer.cs" />
      <Folder Include="Assets" />
      <Folder Include="Assets\Resources\DB\Gameplay\Creeps" />
      <Folder Include="Assets\Resources\DB\Gameplay\Towers" />
@@ -74,7 +75,7 @@
      <Folder Include="Assets\Src" />
      <Folder Include="Assets\Resources\DB\Gameplay\Towers\SimpleTower" />
      <Folder Include="Assets\Src\Gameplay\UI" />
-     <Folder Include="Assets\Resources\DB\3) Edit Tile Map\Configs" />
+     <Folder Include="Assets\Resources\DB\Configs" />
      <Folder Include="Assets\Resources\DB\1) Simple Click Movement" />
      <Folder Include="Assets\Src\DataBindingContext" />
      <Folder Include="Assets\Resources\DB\Gameplay\Creeps\BasicCreep" />

@@ -141,11 +141,21 @@ MonoBehaviour:
         Id:
           Value: 3574747537837414300
       ResourcePath: DB/TestMap/TestMap_mesh
+    - Path: Resources/DB/Gameplay/Creeps/SpawnPoint|EntityPrototype
+      AssetRef:
+        Id:
+          Value: 3713959359970960122
+      ResourcePath: DB/Gameplay/Creeps/SpawnPoint
     - Path: Resources/DB/4) Decide the best target/TileMap 4
       AssetRef:
         Id:
           Value: 3796966886337513946
       ResourcePath: DB/4) Decide the best target/TileMap 4
+    - Path: Resources/DB/Gameplay/Creeps/SpawnPoint|EntityView
+      AssetRef:
+        Id:
+          Value: 3921476673198778002
+      ResourcePath: DB/Gameplay/Creeps/SpawnPoint
     - Path: Resources/DB/Map1_mesh
       AssetRef:
         Id:
