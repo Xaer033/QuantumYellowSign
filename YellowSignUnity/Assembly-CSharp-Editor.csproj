@@ -41,8 +41,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Editor\PhotonPrivateAppVersionEditor.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Editor\SerializableEnterRoomParams.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Editor\MenuShortcuts.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Editor\PhotonAppVersionsPostprocessor.cs" />
      <Compile Include="Assets\Src\Editor\MapBakerEditor.cs" />
+     <Folder Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Editor" />
      <Folder Include="Assets\Src\Editor" />
+     <Folder Include="Assets\ThirdParty\Plugins\LiteNetLib\Editor" />
      <Reference Include="UnityEngine">
      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.11f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
      </Reference>
@@ -885,10 +891,6 @@
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{4e4dd327-e3f8-726a-3fd1-33d518ffce8f}</Project>
       <Name>Assembly-CSharp</Name>
-    </ProjectReference>
-    <ProjectReference Include="ThirdParty.csproj">
-      <Project>{f0a7ed9b-b85e-b5dc-aeff-4d9d28bd277f}</Project>
-      <Name>ThirdParty</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonQuantumEditor.csproj">
       <Project>{9022df57-db3c-5196-eb4d-a33814fa5920}</Project>

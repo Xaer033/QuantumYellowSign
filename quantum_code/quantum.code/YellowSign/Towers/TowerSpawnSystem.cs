@@ -61,7 +61,7 @@ namespace Quantum.YellowSign
             
             for (int i = 0; i < f.PlayerCount; i++) 
             {
-                if (f.GetPlayerCommand(i) is CommandSpawnTower spawnCommand) 
+                if (f.GetPlayerCommand(i) is SpawnTowerCommand spawnCommand) 
                 {
                     bool isWall = map.IsWall(f, spawnCommand.GridPositionIndex);
                     if (isWall)
@@ -83,7 +83,7 @@ namespace Quantum.YellowSign
                     
                     f.Events.EditTileMap(TileType.Wall, position);
                 }
-                else if (f.GetPlayerCommand(i) is CommandDestroyTower destroyCommand)
+                else if (f.GetPlayerCommand(i) is DestroyTowerCommand destroyCommand)
                 {
                     bool isWall = map.IsWall(f, destroyCommand.GridPositionIndex);
                     if (!isWall)

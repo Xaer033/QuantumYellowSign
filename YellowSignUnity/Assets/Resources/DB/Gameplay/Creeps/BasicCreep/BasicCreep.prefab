@@ -250,7 +250,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     Player:
-      _index: 1
+      _index: 0
 --- !u!114 &2374920102840803778
 MonoBehaviour:
   m_ObjectHideFlags: 0

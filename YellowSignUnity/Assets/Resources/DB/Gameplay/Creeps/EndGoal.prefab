@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7163322047486077570}
   - component: {fileID: 6366268659295972358}
   - component: {fileID: 7803482828718764175}
+  - component: {fileID: -2857703273278935387}
   m_Layer: 0
   m_Name: EndGoal
   m_TagString: Untagged
@@ -242,6 +243,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Prototype:
     _empty_prototype_dummy_field_: 0
+--- !u!114 &-2857703273278935387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171861525677527709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cf0c1386c4171b4d95b6187a222b027, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Prototype:
+    Player:
+      _index: 0
 --- !u!114 &-7125018591901985574
 MonoBehaviour:
   m_ObjectHideFlags: 0

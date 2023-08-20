@@ -1,15 +1,13 @@
-﻿
-    using Quantum;
-    using UnityEditor.Rendering.LookDev;
-    using UnityEngine;
-    
+﻿using Quantum;
+using UnityEngine;
+
 [CreateAssetMenu(menuName = "YellowSign/PlayerController")]
 public class PlayerController : ScriptableObject
 {
-    private PlayerDataProvider _playerDataProvider = new PlayerDataProvider();
-
-
-    private SimulationConfig _simulationConfig;
+    public  PlayerDataProvider PlayerDataProvider { get; private set; }
+    
+    private SimulationConfig   _simulationConfig;
+    
     public void OnPlayerDataSet(Frame f, PlayerRef playerRef)
     {
         
@@ -17,23 +15,21 @@ public class PlayerController : ScriptableObject
     
     public void OnSpawnTowerModeToggled(bool spawnTower)
     {
-        _playerDataProvider.TowerSpawnMode.Value = spawnTower;
+        PlayerDataProvider.TowerSpawnMode = spawnTower;
         Debug.Log($"Spawn Tower Mode: {spawnTower}");
     }
 
-    private void Awake()
+    private void OnEnable()
     {
-        _playerDataProvider.GoldAmount.Value = 150;
-        _playerDataProvider.TowerSpawnMode.Value = true;
+        // PlayerDataProvider.NotifyChanges(x =>
+        // {
+        //     PlayerDataProvider.GoldAmount = $"{150}";
+        //     PlayerDataProvider.TowerSpawnMode = true;
+        // });
+        
+        
         //
         // _simulationConfig             = FindObjectOfType<SimulationConfig>();
         // _SimulationConfig.ThreadCount = SystemInfo.processorCount;
-    }
-    
-
-    private void Update()
-    {
-        // EntityRef localPlayer = QuantumRunner.Default.Game.Frames.Verified.Context.
-        // QuantumRunner.Default.Game.Frames.Verified.Has()
     }
 }

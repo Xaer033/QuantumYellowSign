@@ -84,6 +84,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Stats\QuantumMemoryStats.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsCollider3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentTilePathfinder.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentSpawnPoint.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\UtilsAttributes.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityComponentPhysicsJoints3D.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\EntityPrototypeBakedAsset.cs" />
@@ -137,6 +138,7 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumEditorSettings.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Replay\JsonReplaySerializer.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\Utils\GizmoUtils.cs" />
+     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentEndGoal.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\SimulationConfigAsset.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\EditorAttributes\InspectorButtonAttribute.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumGameCallback_FrameDiffer.cs" />
@@ -231,8 +233,6 @@
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetLinking\AssetResourceContainer_AssetBundle.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\AssetTypes\IQuantumPrefabNestedAssetHost.cs" />
      <Compile Include="Assets\ThirdParty\Photon\Quantum\Scripts\QuantumNetworkCommunicator.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentSpawnPoint.cs" />
-     <Compile Include="Assets\ThirdParty\Photon\Quantum\Generated\AssetTypes\EntityComponentEndGoal.cs" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Native" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum" />
      <Folder Include="Assets\ThirdParty\Photon\Quantum\Scripts\Dispatcher" />

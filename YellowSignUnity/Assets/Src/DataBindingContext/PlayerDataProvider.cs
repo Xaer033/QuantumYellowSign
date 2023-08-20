@@ -1,6 +1,6 @@
-using Slash.Unity.DataBind.Core.Data;
-public class PlayerDataProvider : Context
+using UnityEngine;
+public class PlayerDataProvider : ScriptableObject
 {
-    public Property<int> GoldAmount = new Property<int>();
-    public Property<bool> TowerSpawnMode = new Property<bool>();
+    public string GoldAmount { get; set; }
+    public bool TowerSpawnMode { get; set; }
 }

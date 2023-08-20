@@ -59,7 +59,7 @@ public class ClickToEdit : MonoBehaviour
                     
                     if (!isRemoving)
                     {
-                        command = new CommandSpawnTower()
+                        command = new SpawnTowerCommand()
                         {
                             PrototypeGUID = _TowerViewAsset.AssetObject.Guid.Value,
                             GridPositionIndex = index,
@@ -67,13 +67,13 @@ public class ClickToEdit : MonoBehaviour
                     }
                     else
                     {
-                        command = new CommandDestroyTower()
+                        command = new DestroyTowerCommand()
                         {
                             GridPositionIndex = index,
                         };
                     }
                     
-                     QuantumRunner.Default.Game.SendCommand(command);
+                    QuantumRunner.Default.Game.SendCommand(command);
                     return;
                 }
             }

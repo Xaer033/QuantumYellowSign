@@ -1,14 +1,13 @@
-using Slash.Unity.DataBind.Core.Data;
 using UnityEngine;
 using UnityEngine.UI;
-
 public class TowerMenu : MonoBehaviour
 {
-    public Context   _TowerDataProvider;
-    
-    public GameObject _Root;
-    public Button    _ShowHideButton;
-    public Toggle    _SpawnTowerModeToggle;
+    // public Context   _TowerDataProvider;
+    public PlayerController _PlayerController;
+    public GameObject       _Root;
+    // public View             _View;
+    public Button           _ShowHideButton;
+    public Toggle           _SpawnTowerModeToggle;
     
 
 
@@ -26,6 +25,8 @@ public class TowerMenu : MonoBehaviour
     private void Awake()
     {
         _Root.SetActive(false);
+
+        // _View.DataSource = _PlayerController.PlayerDataProvider;
     }
 
     private void Update()
