@@ -1177,16 +1177,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86b5f087a6158b7409c18f4ecd50007e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dataSourceType:
-    assemblyQualifiedName: PlayerDataProvider, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
-  componentPropertyBindings:
-  - showExpanded: 0
-    targetGameObject: {fileID: 3398441411811295747}
-    targetComponent: {fileID: 0}
-    sourcePath: GoldAmount
-    targetPath: 
-  containerPropertyBindings: []
 --- !u!1 &680950804
 GameObject:
   m_ObjectHideFlags: 0
@@ -1703,7 +1693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 987400661}
-  - component: {fileID: 987400660}
+  - component: {fileID: 987400662}
   m_Layer: 0
   m_Name: EntityViewUpdater
   m_TagString: Untagged
@@ -1711,20 +1701,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &987400660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 987400659}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c533cfed317c8854c9d8c177029943ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ViewParentTransform: {fileID: 341764644}
-  AutoFindMapData: 1
 --- !u!4 &987400661
 Transform:
   m_ObjectHideFlags: 0
@@ -1740,6 +1716,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &987400662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987400659}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad76fb404b515094a8836626946b8ce8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ViewParentTransform: {fileID: 341764644}
+  AutoFindMapData: 1
+  _ViewPools:
+  - ViewAsset: {fileID: 749136526690751939, guid: 1a0aad71b2b61d74f910858de8a4ea8c,
+      type: 3}
+    PoolCount: 500
+  - ViewAsset: {fileID: -778057630034848584, guid: cdc1793cea81abf41aa78ef91970986c,
+      type: 3}
+    PoolCount: 1000
+  - ViewAsset: {fileID: 8141505259487387411, guid: 1ef8e9850d4bc6445aa190e63fc64c60,
+      type: 3}
+    PoolCount: 450
 --- !u!1 &1028404880
 GameObject:
   m_ObjectHideFlags: 0
@@ -3207,12 +3207,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aaa0082149855d2429bd2a2803f5ef23, type: 3}
---- !u!1 &3398441411811295747 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1423130832, guid: aaa0082149855d2429bd2a2803f5ef23,
-    type: 3}
-  m_PrefabInstance: {fileID: 3398441411811295746}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4260853326870391447
 PrefabInstance:
   m_ObjectHideFlags: 0

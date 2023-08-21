@@ -8,19 +8,18 @@ namespace Quantum.YellowSign
     {
         public unsafe struct TowerFilter
         {
-            public EntityRef Entity;
-            public Tower* Tower;
+            public EntityRef    Entity;
+            public Tower*       Tower;
+            public Transform3D* Transform;
         }
 
         public override void Update(FrameThreadSafe f, ref TowerFilter filter)
         {
             var tower = filter.Tower;
-            var entity = filter.Entity;
+            var towerTransform = filter.Transform;
             
-            var towerConfig = f.FindAsset<TowerConfig>(tower->Config.Id);
+            var towerConfig    = f.FindAsset<TowerConfig>(tower->Config.Id);
             
-            f.TryGet<Transform3D>(entity, out var towerTransform);
-                
             if (tower->AiState == (byte)TowerAiState.SearchingForTarget)
             {
                 if (tower->ThinkTickTimer >= 0)
@@ -30,7 +29,8 @@ namespace Quantum.YellowSign
                 }
                 
                 var hitCollection = f.Physics3D.OverlapShape(
-                                                    towerTransform, 
+                                                    towerTransform->Position,
+                                                    towerTransform->Rotation, 
                                                     Shape3D.CreateSphere(tower->Range),
                                                     towerConfig.TargetMask.BitMask);
 
@@ -53,17 +53,17 @@ namespace Quantum.YellowSign
                     return;
                 }
 
-                FP distance = FPVector3.Distance(targetTransform->Position, towerTransform.Position);
+                FP distance = FPVector3.Distance(targetTransform->Position, towerTransform->Position);
                 if (distance > tower->Range)
                 {
                     tower->AiState = (byte)TowerAiState.SearchingForTarget;
                     return;
                 }
                 
-                FPVector3 aimAtPosition = CalculateAimAheadPoint(f, towerConfig, tower, towerTransform.Position, tower->TargetEntityRef, targetTransform->Position);
+                FPVector3 aimAtPosition = CalculateAimAheadPoint(f, towerConfig, tower, towerTransform->Position, tower->TargetEntityRef, targetTransform->Position);
                 
                 tower->AimAtPosition  = targetTransform->Position;
-                tower->BarrelRotation = FPQuaternion.LookRotation(aimAtPosition - towerTransform.Position);
+                tower->BarrelRotation = FPQuaternion.LookRotation(aimAtPosition - towerTransform->Position);
 
                 tower->ReloadTime -= f.DeltaTime;
             }

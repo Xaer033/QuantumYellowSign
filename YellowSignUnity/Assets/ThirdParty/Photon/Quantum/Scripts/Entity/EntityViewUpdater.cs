@@ -271,9 +271,9 @@ public unsafe class EntityViewUpdater : MonoBehaviour {
       instance = CreateEntityViewInstance(asset);
     }
     
-    if (ViewParentTransform != null) {
-      instance.transform.SetParent(ViewParentTransform);
-    }
+    // if (ViewParentTransform != null) {
+    //   instance.transform.SetParent(ViewParentTransform);
+    // }
     
     instance.AssetGuid = view.Guid;
     OnEntityViewInstantiated(game, f, instance, handle);

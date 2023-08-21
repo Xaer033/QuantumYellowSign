@@ -739,9 +739,6 @@
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
-     <Reference Include="de.Jochenheckl.Unity.DataBinding">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\de.Jochenheckl.Unity.DataBinding.dll</HintPath>
-     </Reference>
      <Reference Include="PsdPlugin">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
      </Reference>
@@ -789,9 +786,6 @@
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="de.Jochenheckl.Unity.DataBinding.Editor">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\de.Jochenheckl.Unity.DataBinding.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>

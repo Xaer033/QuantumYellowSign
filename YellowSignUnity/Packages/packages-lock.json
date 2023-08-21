@@ -290,15 +290,6 @@
       },
       "url": "https://packages.unity.com"
     },
-    "de.jochenheckl.unity.databinding": {
-      "version": "https://github.com/JochenHeckl/DataBinding.git",
-      "depth": 0,
-      "source": "git",
-      "dependencies": {
-        "com.unity.test-framework": "1.1.11"
-      },
-      "hash": "006f903ced8e2c05a733b30be1b9840654162173"
-    },
     "com.unity.modules.ai": {
       "version": "1.0.0",
       "depth": 0,

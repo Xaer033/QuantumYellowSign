@@ -81,6 +81,7 @@
      <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Scripts\PhotonRegions.cs" />
      <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Scripts\CustomCallbacks.cs" />
      <Compile Include="Assets\ThirdParty\Photon\QuantumDemo\Menu\Scripts\UIGame.cs" />
+     <Compile Include="Assets\Src\Views\YellowSignEntityViewUpdater.cs" />
      <Folder Include="Assets" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMPro.cginc" />
      <Folder Include="Assets\Resources\DB\Gameplay\Creeps" />
@@ -97,6 +98,7 @@
      <Folder Include="Assets\Art\TestTextures" />
      <Folder Include="Assets\Resources\DB\TestMap" />
      <Folder Include="Assets\ThirdParty\TAA" />
+     <Folder Include="Assets\Src\Views" />
      <Folder Include="Assets\ThirdParty\TextMesh Pro\Resources\Fonts &amp; Materials" />
      <None Include="Assets\ThirdParty\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
      <None Include="Assets\Resources\BillingMode.json" />
@@ -819,9 +821,6 @@
      <Reference Include="Unity.RenderPipelines.Universal.Shaders">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.RenderPipelines.Universal.Shaders.dll</HintPath>
      </Reference>
-     <Reference Include="de.Jochenheckl.Unity.DataBinding">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\de.Jochenheckl.Unity.DataBinding.dll</HintPath>
-     </Reference>
      <Reference Include="PsdPlugin">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\PsdPlugin.dll</HintPath>
      </Reference>
@@ -869,9 +868,6 @@
      </Reference>
      <Reference Include="Unity.ShaderGraph.Editor">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.ShaderGraph.Editor.dll</HintPath>
-     </Reference>
-     <Reference Include="de.Jochenheckl.Unity.DataBinding.Editor">
-     <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\de.Jochenheckl.Unity.DataBinding.Editor.dll</HintPath>
      </Reference>
      <Reference Include="Unity.Toolchain.Win-x86_64-Linux-x86_64">
      <HintPath>D:\GameDev\Projects\QuantumYellowSign\YellowSignUnity\Library\ScriptAssemblies\Unity.Toolchain.Win-x86_64-Linux-x86_64.dll</HintPath>
